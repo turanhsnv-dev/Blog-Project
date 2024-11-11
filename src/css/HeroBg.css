@@ -1,0 +1,10 @@
+.hero-bg {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+}
+
+.hero-bg .hero-container {
+  height: auto;
+  padding: 20em 0;
+}
