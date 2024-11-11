@@ -292,7 +292,7 @@ const RecentJobs = () => {
       {/* JOB POST PAGINATION */}
       <div className='pagination-main'>
         <Stack spacing={2}>
-          <Pagination count={10} color='primary' />
+          <Pagination count={30} color='primary' />
         </Stack>
       </div>
     </div>
