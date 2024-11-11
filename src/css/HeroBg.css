@@ -10,12 +10,11 @@ a {
 
 .hero-bg {
   width: 100%;
-  height: auto;
   /* background-image: linear-gradient(to top, #dfe9f3 0%, white 100%); */
   background-image: url(https://persianinventor.com/wp-content/uploads/2022/08/career_banner.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
 }
 
 .hero-bg .hero-container {

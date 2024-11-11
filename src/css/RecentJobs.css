@@ -1,0 +1,87 @@
+.recent-jobs-container {
+  padding: 5em 0;
+}
+
+.recent-jobs-container .recent-title {
+   width: 100%;
+   height: 60px;
+}
+
+.recent-title h1 {
+  font-size: 2em;
+  font-weight: 800;
+}
+
+.recent-title .recent-btn {
+  width: 250px;
+  height: 60px;
+  background-color: #39A7DC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.recent-btn a {
+  color: white;
+  font-weight: 600;
+}
+
+.recent-jobs-container .job-list-container{
+  width: 100%;
+  height: 500px;
+  margin-top: 40px;
+}
+
+.job-list-container .job-post {
+  width: 100%;
+  height: 110px;
+  background-color: #fff;
+  border-radius: 5px;
+  border-bottom: 1px solid #d3e8f2;
+  transition: .3s ease;
+  padding: 24px;
+}
+
+.job-post:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: .3s ease;
+}
+
+.job-post .job-post-info {
+  width: 50%;
+  height: 65px;
+  /* background-color: gray; */
+}
+
+.job-post-info .post-title h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.post-title .work-style {
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  border-radius: 30px;
+  background-color: #39A7DC;
+}
+
+.work-style span {
+  font-size: 13px;
+  color: white;
+  font-weight: bold;
+}
+
+.job-post-info .job-body {
+  width: 50%;
+}
+
+.job-body .social-media {
+  width: 120px;
+  height: auto;
+  padding: 4px 0px;
+}
+
