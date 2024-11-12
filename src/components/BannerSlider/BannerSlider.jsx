@@ -4,9 +4,11 @@ import "../../css/BannerSlider.css";
 const BannerSlider = () => {
   return (
     <div className='container-lg banner-slider'>
+      {/* SLIDER TITLE */}
       <div className='slider-title'>
         <h1>Job Slider Banner</h1>
       </div>
+
       <div
         id='carouselExampleIndicators'
         className='carousel slide'
