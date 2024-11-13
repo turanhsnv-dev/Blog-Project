@@ -1,0 +1,30 @@
+body {
+    background-color: #F8F9FA;
+}
+
+.textBlack {
+    color: black;
+}
+
+.colorBG {
+    background-color: #39A7DC !important;
+}
+
+.colorTxt {
+    color: #39A7DC !important;
+}
+
+.card-hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.BlogHeader button {
+    background-color: #39A7DC;
+    width: 250px;
+    height: 60px;
+}
+
+.BlogHeader button:hover {
+    background-color: #1e5a99;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

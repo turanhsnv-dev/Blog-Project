@@ -1,0 +1,26 @@
+.jobcard-main {
+  padding: 4em 0;
+}
+
+.jobcard-main .jobcard-title h1 {
+   font-size: 2em;
+   font-weight: 800;
+}
+
+.jobcard-main .jobcard-content {
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.css-1lijw7u-JoyCard-root {
+  margin-bottom: 15px;
+  transition: box-shadow 0.3s ease !important;
+}
+
+.MuiCard-root:hover {
+  box-shadow: 0 8px 16px rgba(248, 249, 250, 0.6) !important;
+}
+
+.MuiButton-colorPrimary {
+  background-color: #39A7DC !important;
+}
