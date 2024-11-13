@@ -41,19 +41,25 @@
             "id": 1,
             "image": "",
             "title": "Special title treatment1",
-            "content": "With supporting text below as a natural lead-in to additional content."
+            "content": "With supporting text below as a natural lead-in to additional content.",
+            "like": "100",
+            "comment": "14"
         },
         {
             "id": 2,
             "image": "",
             "title": "Special title treatment2",
-            "content": "With supporting text below as a natural lead-in to additional content."
+            "content": "With supporting text below as a natural lead-in to additional content.",
+            "like": "102",
+            "comment": "25"
         },
         {
             "id": 3,
             "image": "",
             "title": "Special title treatment3",
-            "content": "With supporting text below as a natural lead-in to additional content."
+            "content": "With supporting text below as a natural lead-in to additional content.",
+            "like": "100",
+            "comment": "14"
         }
     ],
     "websecurityblogs": [
@@ -61,13 +67,17 @@
             "id": 1,
             "image": "",
             "title": "Special title treatment1",
-            "content": "With supporting text below as a natural lead-in to additional content."
+            "content": "With supporting text below as a natural lead-in to additional content.",
+            "like": "100",
+            "comment": "14"
         },
         {
             "id": 2,
             "image": "",
             "title": "Special title treatment2",
-            "content": "With supporting text below as a natural lead-in to additional content."
+            "content": "With supporting text below as a natural lead-in to additional content.",
+            "like": "100",
+            "comment": "14"
         }
     ]
 }
