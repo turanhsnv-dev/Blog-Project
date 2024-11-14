@@ -3,4 +3,52 @@
     margin: 0;
     box-sizing: border-box;
 }
-.NavBar {     width: 100%;     height: auto;     margin: 10px; } .NavBar ul li {     list-style: none; } .NavBar ul {     display: flex; } .NavBar ul p {     margin-left: 30px;     margin-top: 10px;     cursor: pointer;     color: #21252993; } .NavBar ul h3 {     margin-left: 120px;     margin-top: 5px; } .spaceBetweenNavItems {     width: 400px; } .NavBar ul button {     margin-left: 30px;     margin-top: 5px; } .shadeOverHover:hover {     color: rgb(0, 0, 0); } .infoOverHover:hover {     color: #0dcaf0; } .opacity p {     color: #c8c8c8;     cursor: pointer; } .bg-shaded {     background-color: #393e46 ;     padding-top: 50px;     padding-bottom: 50px; } .whiteOverHover:hover {     color: rgb(255, 255, 255); } .copyRight {     color:  #c8c8c8; }
+.NavBar {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+}
+.NavBar ul li {
+    list-style: none;
+}
+.NavBar ul {
+    display: flex;
+}
+.NavBar ul p {
+    margin-left: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #21252993;
+}
+.NavBar ul h3 {
+    margin-left: 120px;
+    margin-top: 5px;
+}
+.spaceBetweenNavItems {
+    width: 400px;
+}
+.NavBar ul button {
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.shadeOverHover:hover {
+    color: rgb(0, 0, 0);
+}
+.infoOverHover:hover {
+    color: #0dcaf0;
+}
+.opacity p {
+    color: #c8c8c8;
+    cursor: pointer;
+}
+.bg-shaded {
+    background-color: #393e46 ;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.whiteOverHover:hover {
+    color: rgb(255, 255, 255);
+}
+.copyRight {
+    color:  #c8c8c8;
+}
