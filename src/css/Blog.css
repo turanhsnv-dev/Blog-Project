@@ -14,8 +14,19 @@ body {
     color: #39A7DC !important;
 }
 
+.borderBottom {
+    border-bottom: 8px solid whitesmoke;
+    transition: transform 0.3s ease, z-index 0.3s;
+}
+
 .card-hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.borderBottom:hover {
+    transform: scale(1.1);
+    border-radius: 8px;
+
 }
 
 .BlogHeader button {
@@ -27,4 +38,8 @@ body {
 .BlogHeader button:hover {
     background-color: #1e5a99;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card {
+    overflow: hidden !important;
 }
