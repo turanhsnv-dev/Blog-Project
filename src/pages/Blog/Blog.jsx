@@ -39,7 +39,7 @@ const Blog = () => {
                     <Card.Body>
                         {softwareblogs.map((blog) => (
                             <div key={blog.id}>
-                                <div className='row py-2'>
+                                <div className='row py-4 borderBottom'>
                                     <div className='col-sm-2 text-center blogsAvatar'>
                                         <MDBContainer className="py-3">
                                             <img
@@ -50,13 +50,13 @@ const Blog = () => {
                                             />
                                         </MDBContainer>
                                     </div>
-                                    <div className='col-sm-5 blogsTitle'>
+                                    <div className='col-sm-5 blogsTitle py-4'>
                                         <Card.Title className='colorTxt fw-bold'>{blog.title}</Card.Title>
                                         <Card.Text>
                                             {blog.content}
                                         </Card.Text>
                                     </div>
-                                    <div className='col-sm-3 blogsAuthor-Date'>
+                                    <div className='col-sm-3 blogsAuthor-Date py-4'>
                                         <Card.Text className='colorTxt fw-bold'>
                                             Author : <span className='textBlack fw-semibold'>Emin Hemzeyev</span>
                                         </Card.Text>
@@ -64,16 +64,15 @@ const Blog = () => {
                                             Date : <span className='textBlack fw-semibold'>Today 22:10</span>
                                         </Card.Text>
                                     </div>
-                                    <div className='col-sm-2 blogsLike-Comment'>
+                                    <div className='col-sm-2 blogsLike-Comment py-4'>
                                         <Card.Text className='fw-bold colorTxt'>
-                                            Likes : <span className='textBlack fw-semibold'>109</span>
+                                            Likes : <span className='textBlack fw-semibold'>{blog.like}</span>
                                         </Card.Text>
                                         <Card.Text className='fw-bold colorTxt'>
-                                            Comments : <span className='textBlack fw-semibold'>115</span>
+                                            Comments : <span className='textBlack fw-semibold'>{blog.comment}</span>
                                         </Card.Text>
                                     </div>
                                 </div>
-                                <hr />
                             </div>
 
                         ))}
@@ -85,7 +84,7 @@ const Blog = () => {
                     <Card.Body>
                         {websecurityblogs.map((blog) => (
                             <div key={blog.id}>
-                                <div className='row'>
+                                <div className='row py-4 borderBottom'>
                                     <div className='col-sm-2 text-center blogsAvatar'>
                                         <MDBContainer className="py-3">
                                             <img
@@ -96,13 +95,13 @@ const Blog = () => {
                                             />
                                         </MDBContainer>
                                     </div>
-                                    <div className='col-sm-5 blogsTitle'>
+                                    <div className='col-sm-5 blogsTitle py-4'>
                                         <Card.Title className='colorTxt fw-bold'>{blog.title}</Card.Title>
                                         <Card.Text>
                                             {blog.content}
                                         </Card.Text>
                                     </div>
-                                    <div className='col-sm-3 blogsAuthor-Date'>
+                                    <div className='col-sm-3 blogsAuthor-Date py-4'>
                                         <Card.Text className='colorTxt fw-bold'>
                                             Author : <span className='text-black fw-semibold'>Emin Hemzeyev</span>
                                         </Card.Text>
@@ -110,16 +109,15 @@ const Blog = () => {
                                             Date : <span className='text-black fw-semibold'>Today 22:10</span>
                                         </Card.Text>
                                     </div>
-                                    <div className='col-sm-2 blogsLike-Comment'>
+                                    <div className='col-sm-2 blogsLike-Comment py-4'>
                                         <Card.Text className='fw-bold colorTxt'>
-                                            Likes : <span className='text-black fw-semibold'>109</span>
+                                            Likes : <span className='text-black fw-semibold'>{blog.like}</span>
                                         </Card.Text>
                                         <Card.Text className='fw-bold colorTxt'>
-                                            Comments : <span className='text-black fw-semibold'>115</span>
+                                            Comments : <span className='text-black fw-semibold'>{blog.comment}</span>
                                         </Card.Text>
                                     </div>
                                 </div>
-                                <hr />
                             </div>
                         ))}
 
