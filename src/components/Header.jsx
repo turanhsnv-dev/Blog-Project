@@ -13,11 +13,11 @@ const Header = () => {
           <NavLink to="/" className="text-black pgf">
             Home
           </NavLink>
-          <NavLink to="/about" className="shadeOverHover pgf">
-            About
-          </NavLink>
           <NavLink to="/category" className="infoOverHover pgf">
             Category
+          </NavLink>
+          <NavLink to="/about" className="shadeOverHover pgf">
+            About
           </NavLink>
           <NavLink to="/blog" className="shadeOverHover pgf">
             Blog
