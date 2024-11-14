@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -10,19 +11,29 @@ const Header = () => {
           </li>
           <div className="spaceBetweenNavItems"></div>
           <li>
-            <p className="text-black">Home</p>
+            <NavLink to="/" className="text-black pgf">
+              Home
+            </NavLink>
           </li>
           <li>
-            <p className="infoOverHover">Category</p>
+            <NavLink to="Category" className="infoOverHover pgf">
+              Category
+            </NavLink>
           </li>
           <li>
-            <p className="shadeOverHover">Blog</p>
+            <NavLink to="Blog" className="shadeOverHover pgf">
+              Blog
+            </NavLink>
           </li>
           <li>
-            <p className="shadeOverHover">About</p>
+            <NavLink to="About" className="shadeOverHover pgf">
+              About
+            </NavLink>
           </li>
           <li>
-            <p className="shadeOverHover">Contact</p>
+            <NavLink to="Contact" className="shadeOverHover pgf">
+              Contact
+            </NavLink>
           </li>
           <li>
             <button type="button" className="btn btn-info text-white">

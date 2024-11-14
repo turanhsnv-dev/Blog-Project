@@ -14,7 +14,7 @@
 .NavBar ul {
     display: flex;
 }
-.NavBar ul p {
+.pgf {
     margin-left: 30px;
     margin-top: 10px;
     cursor: pointer;
