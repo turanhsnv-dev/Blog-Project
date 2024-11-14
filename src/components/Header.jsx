@@ -28,7 +28,7 @@ const Header = () => {
 
           <li>
             <button type="button" className="btn btn-info text-white">
-              + Post A Job
+              Login
             </button>
           </li>
         </ul>

@@ -6,7 +6,10 @@
 .NavBar {
     width: 100%;
     height: auto;
-    margin: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 1px;
+    background-color: #39A7DC !important;
+    box-shadow: black;
 }
 .NavBar ul li {
     list-style: none;
@@ -18,18 +21,19 @@
     margin-left: 30px;
     margin-top: 10px;
     cursor: pointer;
-    color: #21252993;
+    color: #ffffff93;
+    margin-top: 20px;
 }
 .NavBar ul h3 {
     margin-left: 120px;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 .spaceBetweenNavItems {
     width: 400px;
 }
 .NavBar ul button {
     margin-left: 30px;
-    margin-top: 5px;
+    margin-top: 12px;
 }
 .shadeOverHover:hover {
     color: rgb(0, 0, 0);
