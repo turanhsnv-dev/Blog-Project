@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <div>
-      <div className="NavBar">
+      <div className="NavBar py-2">
         <ul>
           <li>
             <h3>JobStart</h3>

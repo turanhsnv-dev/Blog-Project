@@ -3,7 +3,7 @@ body {
 }
 
 .textBlack {
-    color: black;
+    color: black !important;
 }
 
 .colorBG {
