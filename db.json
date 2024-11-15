@@ -6,34 +6,6 @@
             "surname": "Həmzəyev",
             "email": "ehemzeyev93@gmail.com",
             "password": "emin1245"
-        },
-        {
-            "id": 2,
-            "name": "Tamerlan",
-            "surname": "Emirov",
-            "email": "tamis7126@gmail.com",
-            "password": "tamerlan1245"
-        },
-        {
-            "id": 3,
-            "name": "Ənvər",
-            "surname": "Əliyev",
-            "email": "",
-            "password": "anvar1245"
-        },
-        {
-            "id": 4,
-            "name": "Turan",
-            "surname": "Həsənov",
-            "email": "turanhasan013@gmail.com",
-            "password": "turan1245"
-        },
-        {
-            "id": 5,
-            "name": "Rüfət",
-            "surname": "Hüseynov",
-            "email": "huseynovrufet140@gmail.com",
-            "password": "rufet1245"
         }
     ],
     "softwareblogs": [

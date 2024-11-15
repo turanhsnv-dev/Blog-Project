@@ -27,9 +27,12 @@ const Header = () => {
           </NavLink>
 
           <li>
-            <button type="button" className="btn btn-info text-white">
-              Login
-            </button>
+            <NavLink to="/loginform" >
+              <button type="button" className="btn btn-info text-white">
+                Login
+              </button>
+            </NavLink>
+
           </li>
         </ul>
       </div>
