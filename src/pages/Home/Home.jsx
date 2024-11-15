@@ -4,6 +4,7 @@ import HeroBg from "../../components/HomeBanner/HeroBg";
 import RecentJobs from "../../components/RecentJobs/RecentJobs";
 import JobCard from "../../components/JobCard/JobCard";
 import BannerSlider from "../../components/BannerSlider/BannerSlider";
+import Services from "../../components/Services/Services";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <RecentJobs />
       <BannerSlider />
       <JobCard />
+      {/* <Services /> */}
     </div>
   );
 };
