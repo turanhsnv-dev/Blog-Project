@@ -1,13 +1,5 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "name": "Emin",
-            "surname": "Həmzəyev",
-            "email": "ehemzeyev93@gmail.com",
-            "password": "emin1245"
-        }
-    ],
+    "users": [],
     "softwareblogs": [
         {
             "id": 1,
