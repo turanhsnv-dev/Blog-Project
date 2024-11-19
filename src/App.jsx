@@ -6,6 +6,7 @@ import Layout from "./components/Layout";
 import Blog from "./pages/Blog/Blog";
 import About from "./pages/About/About";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Contact from "./pages/Contact/contact";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import LoginForm from "./components/Login/LoginForm";
 
@@ -19,6 +20,7 @@ function App() {
             <Route path="/About" element={<About />} />
             <Route path="/Blog" element={<Blog />} />
             <Route path="/LoginForm" element={<LoginForm />} />
+            <Route path="/Contact" element={<Contact />} />
           </Route>
         </Routes>
       </Router>
