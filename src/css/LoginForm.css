@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.loginForm {
+    width: 70%;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.loginContainer {
+    width: 50%;
+    height: 100%;
+    background-color: white;
+}
+
+.registerContainer {
+    width: 50%;
+    background-color: #39A7DC;
+    height: 100%;
+}
+
+form button {
+    background-color: #39A7DC !important;
+}
+
+form input {
+    border: none;
+    background-color: whitesmoke;
+    width: 300px;
+}
+
+form a {
+    color: gray;
+}
+
+form input:focus {
+    outline: none;
+}
+
+form button:hover {
+    background-color: #1e5a99 !important;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.registerContainer button {
+    border: 2px solid white;
+    width: 150px;
+}
+
+.registerContainer button:hover {
+    background-color: #1e5a99;
+}

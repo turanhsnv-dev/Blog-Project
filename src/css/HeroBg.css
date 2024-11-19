@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+ font-family: "Nunito Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero-bg {
+  width: 100%;
+  /* background-image: linear-gradient(to top, #dfe9f3 0%, white 100%); */
+  background-image: url(https://persianinventor.com/wp-content/uploads/2022/08/career_banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-bg .hero-container {
+  padding: 12em 0;
+}
+
+.hero-container .hero-content .hero-title {
+  width: 60%;
+}
+
+.hero-content h1 {
+  font-size: 5em;
+  font-weight: 300;
+  line-height: 1.3em;
+  color: white;
+}
+
+.hero-content h1 span {
+  font-weight: 800;
+}
+
+.hero-content .hero-job-search {
+  margin-top: 20px;
+}
+
+.hero-job-search .hero-job-find ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0 !important;
+}
+
+.hero-job-search .hero-job-find ul li {
+  padding: 16px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: .3s ease;
+}
+
+.hero-job-search .hero-job-find ul li a {
+  font-weight: bold;
+  transition: .5s ease;
+}
+
+.hero-job-find ul li:hover {
+  background-color: #39A7DC;
+  transition: .3s ease;
+}
+
+.hero-job-find ul li:hover a {
+  color: white;
+  transition: .5s ease;
+}
+
+.hero-job-search .job-input-wrapper {
+  width: 75%;
+  padding: 24px;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.job-input-wrapper input {
+  padding: 10px 12px;
+  outline: none;
+  border: 1px solid #39A7DC;
+  border-radius: 5px;
+  transition: .3s ease;
+}
+
+.job-input-wrapper .search-dropdown button {
+   padding: 10px 65px;
+   background-color: #39A7DC;
+}
+
+.job-input-wrapper .job-search-btn {
+  padding: 10px 12px;
+  border-radius: 5px;
+  background-color: #39A7DC;
+}
+
+.job-search-btn a {
+  color: white;
+  transition: .3s ease;
+}
+
+.job-search-btn:hover a {
+  font-weight: bold;
+  transition: .3s ease;
+}
+
+.job-input-wrapper input:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: .3s ease;
+}

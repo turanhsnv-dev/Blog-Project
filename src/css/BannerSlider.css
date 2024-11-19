@@ -1,0 +1,70 @@
+a {
+  text-decoration: none !important;
+}
+
+.banner-slider {
+  padding: 3em 0;
+}
+
+.banner-slider .slider-title h1 {
+  font-size: 2em;
+  font-weight: 800;
+}
+
+.carousel {
+  margin-top: 40px;
+}
+
+.carousel-inner {
+  border-radius: 30px;
+}
+
+.carousel-item {
+  height: 75vh !important;
+  border-radius: 30px;
+  position: relative;
+}
+
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.carousel-item .slider-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4));
+
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.slider-overlay h3 {
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.slider-overlay p {
+  color: #B3B3B3;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.slider-overlay a {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #39A7DC;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+}

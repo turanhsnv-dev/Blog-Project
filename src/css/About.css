@@ -1,0 +1,48 @@
+.About {
+  width: 100%;
+  height: auto;
+  margin: 30px 0;
+}
+.imagecol {
+  margin: 50px 0;
+}
+.imagecol img {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+.aboutcol {
+  justify-content: start;
+}
+.aboutcol li {
+  list-style: none;
+}
+.aboutcol div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-right: 20px;
+}
+.aboutcol i {
+  margin-right: 7px;
+  color: green;
+}
+.cards {
+  padding: 50px 0;
+}
+.cards .col-sm-2 {
+  margin: 20px;
+}
+.textcenter {
+  justify-content: center;
+  text-align: center;
+  margin: 30px 0;
+}
+.cards h4 {
+  font-size: 16px;
+  color: #39a7dc;
+}
+.cards p {
+  font-size: 13px;
+  color: rgb(148, 148, 148);
+}
