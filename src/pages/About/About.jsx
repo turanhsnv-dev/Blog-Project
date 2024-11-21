@@ -88,7 +88,7 @@ const About = () => {
                     <div class="card">
                  <img class="card-img-top" src='https://preview.colorlib.com/theme/jobstart/images/person_4.jpg'  alt="Card image"/>
                 <div class="card-body">
-                <h4 class="card-title">Elvin Mammadov</h4>
+                <h4 class="card-title">Elvin Umudov</h4>
                  <p class="card-text">Front-End Developer</p>
                    
                      </div>
