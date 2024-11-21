@@ -41,6 +41,14 @@ function LoginForm() {
                   className="my-4 p-2"
 
                 />
+                <select>
+                  <option value="Your Role">Your Role</option>
+                  <option value="FrontEnd Developer">FrontEnd Developer</option>
+                  <option value="BackEnd Developer">BackEnd Developer</option>
+                  <option value="FullStack Developer">FullStack Developer</option>
+                  <option value="Designer">Designer</option>
+                  <option value="Web Security">Web Security</option>
+                </select>
                 <button className="btn fw-bold text-white py-2 mt-3">Sign up</button>
               </form>
             </>

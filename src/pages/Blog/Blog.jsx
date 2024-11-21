@@ -2,11 +2,21 @@ import React, { useEffect, useState } from "react";
 import Card from "react-bootstrap/Card";
 import { MDBContainer } from "mdb-react-ui-kit";
 import axios, { Axios } from "axios";
+import { Modal, Button, Form } from "react-bootstrap";
 import "../../css/Blog.css";
 const Blog = () => {
     const [users, setUsers] = useState([]);
     const [softwareblogs, setSoftwareblogs] = useState([]);
     const [websecurityblogs, setWebsecurityblogs] = useState([]);
+    const [showModal, setShowModal] = useState(false);
+    const [title, setTitle] = useState("");
+    const [content, setContent] = useState("");
+
+    const handleSubmit = () => {
+        console.log("Başlık:", title);
+        console.log("İçerik:", content);
+        setShowModal(false);
+    };
 
     useEffect(() => {
         const fetchData = async () => {
@@ -14,10 +24,7 @@ const Blog = () => {
                 const [res1, res2, res3] = await Promise.all([
                     axios.get('http://localhost:5000/users'),
                     axios.get('http://localhost:5000/softwareblogs'),
-                    axios.get('http://localhost:5000/websecurityblogs'),
-                    axios.get("http://localhost:5000/users"),
-                    axios.get("http://localhost:5000/softwareblogs"),
-                    axios.get("http://localhost:5000/websecurityblogs"),
+                    axios.get('http://localhost:5000/websecurityblogs')
                 ]);
                 setUsers(res1.data);
                 setSoftwareblogs(res2.data);
@@ -32,8 +39,41 @@ const Blog = () => {
         <>
             <div className="d-flex justify-content-between align-items-center BlogHeader pt-5">
                 <h2 className="mx-5 py-5 fw-bold ">Blogs</h2>
-                <button className="btn mx-5 fw-bold text-white">+New Blog</button>
+                <button onClick={() => setShowModal(true)} className="btn mx-5 fw-bold text-white">+New Blog</button>
             </div>
+            <Modal show={showModal} onHide={() => setShowModal(false)} centered>
+                <Modal.Header closeButton>
+                    <Modal.Title>Blog Əlavə Et
+                    </Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <Form>
+                        <Form.Group className="mb-3">
+                            <Form.Label>Title</Form.Label>
+                            <Form.Control
+                                type="text"
+                                placeholder="Başlığ Əlavə Et"
+                                value={title}
+                                onChange={(e) => setTitle(e.target.value)}
+                            />
+                        </Form.Group>
+                        <Form.Group className="mb-3">
+                            <Form.Label>Content</Form.Label>
+                            <Form.Control
+                                as="textarea"
+                                placeholder="Məzmun Əlavə Et"
+                                value={content}
+                                onChange={(e) => setContent(e.target.value)}
+                            />
+                        </Form.Group>
+                    </Form>
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button variant="primary" onClick={handleSubmit}>
+                        Göndər
+                    </Button>
+                </Modal.Footer>
+            </Modal>
 
             <div className="container-fluid py-5 px-5">
                 <Card className="card card-hover mb-5">
