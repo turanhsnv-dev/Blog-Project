@@ -29,23 +29,23 @@ const About = () => {
             </p>
             <ul>
               <div>
-                <i class="fa-solid fa-check"></i>
+                <i className="fa-solid fa-check"></i>
                 <li>Lorem ipsum dolor sit amet.</li>
               </div>
               <div>
-                <i class="fa-solid fa-check"></i>
+                <i className="fa-solid fa-check"></i>
                 <li>Lorem ipsum dolor sit amet.</li>
               </div>
               <div>
-                <i class="fa-solid fa-check"></i>
+                <i className="fa-solid fa-check"></i>
                 <li>Lorem ipsum dolor sit amet.</li>
               </div>
               <div>
-                <i class="fa-solid fa-check"></i>
+                <i className="fa-solid fa-check"></i>
                 <li>Lorem ipsum dolor sit amet.</li>
               </div>
               <div>
-                <i class="fa-solid fa-check"></i>
+                <i className="fa-solid fa-check"></i>
                 <li>Lorem ipsum dolor sit amet.</li>
               </div>
             </ul>
@@ -57,71 +57,71 @@ const About = () => {
         </div>
         <div className="row cards">
           <div className="col-sm-2">
-            <div class="card">
+            <div className="card">
               <img
-                class="card-img-top"
+                className="card-img-top"
                 src="https://preview.colorlib.com/theme/jobstart/images/person_4.jpg"
                 alt="Card image"
               />
-              <div class="card-body">
-                <h4 class="card-title">Turan Hasanov</h4>
-                <p class="card-text">Front-End Developer</p>
+              <div className="card-body">
+                <h4 className="card-title">Turan Hasanov</h4>
+                <p className="card-text">Front-End Developer</p>
               </div>
             </div>
           </div>
 
           <div className="col-sm-2">
-            <div class="card">
+            <div className="card">
               <img
-                class="card-img-top"
+                className="card-img-top"
                 src="https://preview.colorlib.com/theme/jobstart/images/person_4.jpg"
                 alt="Card image"
               />
-              <div class="card-body">
-                <h4 class="card-title">Emin Hamzayev</h4>
-                <p class="card-text">Front-End Developer</p>
+              <div className="card-body">
+                <h4 className="card-title">Emin Hamzayev</h4>
+                <p className="card-text">Front-End Developer</p>
               </div>
             </div>
           </div>
 
           <div className="col-sm-2">
-            <div class="card">
+            <div className="card">
               <img
-                class="card-img-top"
+                className="card-img-top"
                 src="https://preview.colorlib.com/theme/jobstart/images/person_4.jpg"
                 alt="Card image"
               />
-              <div class="card-body">
-                <h4 class="card-title">Tamerlan Mammadov</h4>
-                <p class="card-text">Front-End Developer</p>
+              <div className="card-body">
+                <h4 className="card-title">Tamerlan Mammadov</h4>
+                <p className="card-text">Front-End Developer</p>
               </div>
             </div>
           </div>
 
           <div className="col-sm-2">
-            <div class="card">
+            <div className="card">
               <img
-                class="card-img-top"
+                className="card-img-top"
                 src="https://preview.colorlib.com/theme/jobstart/images/person_4.jpg"
                 alt="Card image"
               />
-              <div class="card-body">
-                <h4 class="card-title">Elvin Umudov</h4>
-                <p class="card-text">Front-End Developer</p>
+              <div className="card-body">
+                <h4 className="card-title">Elvin Umudov</h4>
+                <p className="card-text">Front-End Developer</p>
               </div>
             </div>
           </div>
 
           <div className="col-sm-2">
-            <div class="card">
+            <div className="card">
               <img
-                class="card-img-top"
+                className="card-img-top"
                 src="https://preview.colorlib.com/theme/jobstart/images/person_4.jpg"
                 alt="Card image"
               />
-              <div class="card-body">
-                <h4 class="card-title">Rufat Huseynov</h4>
-                <p class="card-text">Front-End Developer</p>
+              <div className="card-body">
+                <h4 className="card-title">Rufat Huseynov</h4>
+                <p className="card-text">Front-End Developer</p>
               </div>
             </div>
           </div>
