@@ -1,80 +1,15 @@
 {
-<<<<<<< HEAD
-    "users": [
-        {
-            "id": 1,
-            "name": "Emin",
-            "surname": "Həmzəyev",
-            "email": "ehemzeyev93@gmail.com",
-            "password": "emin1245",
-            "image": ""
-            
-        },
-        {
-            "id": 2,
-            "name": "Tamerlan",
-            "surname": "Emirov",
-            "email": "tamis7126@gmail.com",
-            "password": "tamerlan1245",
-            "image": ""
-        },
-        {
-            "id": 3,
-            "name": "Ənvər",
-            "surname": "Əliyev",
-            "email": "",
-            "password": "anvar1245",
-            "image": ""
-        },
-        {
-            "id": 4,
-            "name": "Turan",
-            "surname": "Həsənov",
-            "email": "turanhasan013@gmail.com",
-            "password": "turan1245",
-            "image": ""
-        },
-        {
-            "id": 5,
-            "name": "Rüfət",
-            "surname": "Hüseynov",
-            "email": "huseynovrufet140@gmail.com",
-            "password": "rufet1245",
-            "image": ""
-        }
-    ],
-=======
     "users": [],
->>>>>>> e79bb113275d428640f8b12c49e74d0bfcd8fce0
     "softwareblogs": [
         {
             "id": 1,
-            "image": "",
-            "title": "Special title treatment1",
-            "content": "With supporting text below as a natural lead-in to additional content.",
-            "like": "100",
-            "comment": "14"
-        },
-        {
-            "id": 2,
-            "image": "",
-            "title": "Special title treatment2",
-            "content": "With supporting text below as a natural lead-in to additional content.",
-            "like": "102",
-            "comment": "25"
-        },
-        {
-            "id": 3,
-            "image": "",
-            "title": "Special title treatment3",
-            "content": "With supporting text below as a natural lead-in to additional content.",
-            "like": "100",
-            "comment": "14"
+            "title": "test1",
+            "content": "teasiohjtoiaethjioa"
         }
     ],
     "websecurityblogs": [
         {
-            "id": 1,
+            "id": "1",
             "image": "",
             "title": "Special title treatment1",
             "content": "With supporting text below as a natural lead-in to additional content.",
@@ -82,7 +17,7 @@
             "comment": "14"
         },
         {
-            "id": 2,
+            "id": "2",
             "image": "",
             "title": "Special title treatment2",
             "content": "With supporting text below as a natural lead-in to additional content.",

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Card from "react-bootstrap/Card";
 import { MDBContainer } from "mdb-react-ui-kit";
 import axios, { Axios } from "axios";
+import { createPost } from "../../components/Services/Api";
 import { Modal, Button, Form } from "react-bootstrap";
 import "../../css/Blog.css";
 const Blog = () => {
@@ -12,10 +13,11 @@ const Blog = () => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
 
-  const handleSubmit = () => {
-    console.log("Başlık:", title);
-    console.log("İçerik:", content);
-    setShowModal(false);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    await createPost({ title, content });
+    setTitle("");
+    setContent("");
   };
 
   useEffect(() => {
@@ -35,6 +37,7 @@ const Blog = () => {
     };
     fetchData();
   }, []);
+
   return (
     <>
       <div className="d-flex justify-content-between align-items-center BlogHeader pt-5">
@@ -52,6 +55,14 @@ const Blog = () => {
         </Modal.Header>
         <Modal.Body>
           <Form>
+            <Form.Group className="mb-3">
+              <Form.Label>Category</Form.Label>
+              <Form.Select>
+                <option>Category</option>
+                <option value={softwareblogs} onChange={(e) => setSoftwareblogs(e.target.value)}>Software Blogs</option>
+                <option value={websecurityblogs} onChange={(e) => setWebsecurityblogs(e.target.value)}>Web Security Blogs</option>
+              </Form.Select>
+            </Form.Group>
             <Form.Group className="mb-3">
               <Form.Label>Title</Form.Label>
               <Form.Control
