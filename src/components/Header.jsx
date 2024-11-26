@@ -25,7 +25,6 @@ const Header = () => {
           <NavLink to="/contact" className="shadeOverHover pgf">
             Contact
           </NavLink>
-
           <li>
             <NavLink to="/loginform">
               <button type="button" className="btn btn-info text-white">
