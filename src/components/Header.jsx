@@ -7,7 +7,7 @@ const Header = () => {
       <div className="NavBar py-2">
         <ul>
           <li>
-            <h3>JobStart</h3>
+            <h3 className="text-white">JobStart</h3>
           </li>
           <div className="spaceBetweenNavItems"></div>
           <NavLink to="/" className="text-black pgf">
