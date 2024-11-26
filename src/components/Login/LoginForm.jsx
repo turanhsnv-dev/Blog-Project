@@ -41,7 +41,7 @@ function LoginForm() {
                   className="my-4 p-2"
 
                 />
-                <select>
+                <select className="fw-bold">
                   <option value="Your Role">Your Role</option>
                   <option value="FrontEnd Developer">FrontEnd Developer</option>
                   <option value="BackEnd Developer">BackEnd Developer</option>
