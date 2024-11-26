@@ -56,3 +56,20 @@
 .copyRight {
     color:  #c8c8c8;
 }
+.searchBar {
+    border-radius: 5px 0 0 5px;
+    color: black;
+    border: none;
+    padding: 4px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.searchButton {
+   border: none;
+   margin-top: 15px;
+   margin-left: 0 !important;
+   padding: 4px;
+   background-color: #0dcaf0;
+   color: white;
+   border-radius: 0 5px 5px 0;
+}
