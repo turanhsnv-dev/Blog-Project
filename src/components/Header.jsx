@@ -13,9 +13,6 @@ const Header = () => {
           <NavLink to="/" className="text-black pgf">
             Home
           </NavLink>
-          <NavLink to="/category" className="infoOverHover pgf">
-            Category
-          </NavLink>
           <NavLink to="/about" className="shadeOverHover pgf">
             About
           </NavLink>
@@ -31,6 +28,10 @@ const Header = () => {
                 Login
               </button>
             </NavLink>
+          </li>
+          <li className="mx-2">
+            <input className="searchBar" type="text" placeholder="Search..." />
+            <button className="searchButton">Search</button>
           </li>
         </ul>
       </div>
