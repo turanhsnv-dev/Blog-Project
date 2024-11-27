@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Card from "react-bootstrap/Card";
 import { MDBContainer } from "mdb-react-ui-kit";
-import axios, { Axios } from "axios";
+import axios from "axios";
 import { createPost } from "../../components/Services/Api";
 import { Modal, Button, Form } from "react-bootstrap";
 import "../../css/Blog.css";

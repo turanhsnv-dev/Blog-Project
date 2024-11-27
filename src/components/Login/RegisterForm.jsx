@@ -1,25 +1,33 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const RegisterForm = () => {
+const RegisterForm = ({ navigate, setIsRegistering }) => {
   const [name, setName] = useState("");
   const [surname, setSurName] = useState("");
   const [username, setUserName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [role, setRole] = useState("");
 
   const registerPost = async (e) => {
+    if (!name || !surname || !username || !email || !password || role === 'Your Role') {
+      alert("Bütün Xanaları Doldurun...")
+      return;
+    }
     try {
-      e.prevenDefault();
+      e.preventDefault();
       const response = await axios.post("http://localhost:5000/users", {
         name,
         surname,
         username,
         email,
         password,
+        role
       });
-      console.log(response.data);
       alert("Qeydiyyat Ugurlu Oldu..");
+
+      navigate("/loginform");
+      setIsRegistering(false);
     } catch (error) {
       console.error("User Data Cekilmedi", error);
     }
@@ -48,6 +56,14 @@ const RegisterForm = () => {
           onChange={(e) => setSurName(e.target.value)}
         />
         <input
+          type="text"
+          name="username"
+          placeholder="Username"
+          className="mt-3 p-2"
+          value={username}
+          onChange={(e) => setUserName(e.target.value)}
+        />
+        <input
           type="email"
           name="email"
           placeholder="Email"
@@ -63,7 +79,10 @@ const RegisterForm = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <select className="fw-bold">
+        <select className="fw-bold"
+          value={role}
+          onChange={(e) => setRole(e.target.value)}
+        >
           <option value="Your Role">Your Role</option>
           <option value="FrontEnd Developer">FrontEnd Developer</option>
           <option value="BackEnd Developer">BackEnd Developer</option>

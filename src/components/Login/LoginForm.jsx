@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "../../css/LoginForm.css";
 import RegisterForm from "./RegisterForm";
+import { useNavigate } from "react-router-dom";
+
 function LoginForm() {
   const [isRegistering, setIsRegistering] = useState(false);
-
+  const navigate = useNavigate();
 
   return (
     <div className="container py-5 my-5 d-flex justify-content-center align-items-center">
@@ -11,7 +13,7 @@ function LoginForm() {
         <div className="loginContainer d-flex justify-content-center align-items-center flex-column">
           {isRegistering ? (
             <>
-              <RegisterForm/>
+              <RegisterForm navigate={navigate} setIsRegistering={setIsRegistering} />
             </>
           ) : (
             <>

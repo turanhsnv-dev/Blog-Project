@@ -1,84 +1,76 @@
 {
   "users": [
     {
-      "id": "ffec",
-      "name": "",
-      "surname": "",
-      "username": "",
-      "email": "",
-      "password": ""
+      "id": "06a0",
+      "name": "Emin",
+      "surname": "Hemzeyev",
+      "username": "asfsafa",
+      "email": "emiko.hev@gmail.com",
+      "password": "safafa",
+      "role": "FrontEnd Developer"
     },
     {
-      "id": "8a24",
-      "name": "",
-      "surname": "",
-      "username": "",
-      "email": "",
-      "password": ""
+      "id": "9acc",
+      "name": "Emin",
+      "surname": "Hemzeyev",
+      "username": "fsafsafa",
+      "email": "ehemzeyev93@gmail.com",
+      "password": "fasfasfa",
+      "role": "BackEnd Developer"
     },
     {
-      "id": "9e89",
-      "name": "",
-      "surname": "",
-      "username": "",
-      "email": "",
-      "password": ""
+      "id": "37cc",
+      "name": "asfsafsa",
+      "surname": "fasfaf",
+      "username": "asfsafa",
+      "email": "ehemzeyev93@gmail.com",
+      "password": "safasfas",
+      "role": "FrontEnd Developer"
     },
     {
-      "id": "26a3",
-      "name": "",
-      "surname": "",
-      "username": "",
-      "email": "",
-      "password": ""
+      "id": "b971",
+      "name": "safsafas",
+      "surname": "fafafa",
+      "username": "safasfas",
+      "email": "ehemzeyev@mail.ru",
+      "password": "asfsafa",
+      "role": "BackEnd Developer"
     },
     {
-      "id": "46a9",
-      "name": "",
-      "surname": "",
-      "username": "",
-      "email": "",
-      "password": ""
+      "id": "93e2",
+      "name": "safsafas",
+      "surname": "fafafa",
+      "username": "safasfas",
+      "email": "ehemzeyev@mail.ru",
+      "password": "asfsafa",
+      "role": "BackEnd Developer"
     },
     {
-      "id": "3ed9",
-      "name": "",
-      "surname": "",
-      "username": "",
-      "email": "",
-      "password": ""
+      "id": "c91a",
+      "name": "safas",
+      "surname": "fasfasf",
+      "username": "asfasfas",
+      "email": "emiko.hev@gmail.com",
+      "password": "fas",
+      "role": "FrontEnd Developer"
     },
     {
-      "id": "c048",
-      "name": "",
-      "surname": "",
-      "username": "",
-      "email": "",
-      "password": ""
+      "id": "771a",
+      "name": "safas",
+      "surname": "fasfasf",
+      "username": "asfasfas",
+      "email": "emiko.hev@gmail.com",
+      "password": "fassafasfa",
+      "role": "FrontEnd Developer"
     },
     {
-      "id": "f98b",
-      "name": "",
-      "surname": "",
-      "username": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "cf2e",
-      "name": "test",
-      "surname": "test",
-      "username": "",
-      "email": "test@mail.ru",
-      "password": "ndahjg djkha"
-    },
-    {
-      "id": "4d00",
-      "name": "",
-      "surname": "",
-      "username": "",
-      "email": "",
-      "password": ""
+      "id": "2ede",
+      "name": "asfasfsafs",
+      "surname": "afsafs",
+      "username": "afa",
+      "email": "emiko.hev@gmail.com",
+      "password": "asfasfas",
+      "role": "FrontEnd Developer"
     }
   ],
   "softwareblogs": [
