@@ -1,76 +1,31 @@
 {
   "users": [
     {
-      "id": "06a0",
-      "name": "Emin",
-      "surname": "Hemzeyev",
-      "username": "asfsafa",
-      "email": "emiko.hev@gmail.com",
-      "password": "safafa",
+      "id": 1,
+      "name": "John",
+      "surname": "Doe",
+      "username": "johndoe",
+      "email": "john@example.com",
+      "password": "123456",
       "role": "FrontEnd Developer"
     },
     {
-      "id": "9acc",
-      "name": "Emin",
-      "surname": "Hemzeyev",
-      "username": "fsafsafa",
-      "email": "ehemzeyev93@gmail.com",
-      "password": "fasfasfa",
+      "id": 2,
+      "name": "Jane",
+      "surname": "Smith",
+      "username": "janesmith",
+      "email": "jane@example.com",
+      "password": "654321",
       "role": "BackEnd Developer"
     },
     {
-      "id": "37cc",
-      "name": "asfsafsa",
-      "surname": "fasfaf",
-      "username": "asfsafa",
-      "email": "ehemzeyev93@gmail.com",
-      "password": "safasfas",
-      "role": "FrontEnd Developer"
-    },
-    {
-      "id": "b971",
-      "name": "safsafas",
-      "surname": "fafafa",
-      "username": "safasfas",
-      "email": "ehemzeyev@mail.ru",
-      "password": "asfsafa",
-      "role": "BackEnd Developer"
-    },
-    {
-      "id": "93e2",
-      "name": "safsafas",
-      "surname": "fafafa",
-      "username": "safasfas",
-      "email": "ehemzeyev@mail.ru",
-      "password": "asfsafa",
-      "role": "BackEnd Developer"
-    },
-    {
-      "id": "c91a",
-      "name": "safas",
+      "id": "9484",
+      "name": "fuiohasfa",
       "surname": "fasfasf",
       "username": "asfasfas",
-      "email": "emiko.hev@gmail.com",
-      "password": "fas",
-      "role": "FrontEnd Developer"
-    },
-    {
-      "id": "771a",
-      "name": "safas",
-      "surname": "fasfasf",
-      "username": "asfasfas",
-      "email": "emiko.hev@gmail.com",
-      "password": "fassafasfa",
-      "role": "FrontEnd Developer"
-    },
-    {
-      "id": "2ede",
-      "name": "asfasfsafs",
-      "surname": "afsafs",
-      "username": "afa",
-      "email": "emiko.hev@gmail.com",
-      "password": "asfasfas",
-      "role": "FrontEnd Developer"
+      "email": "eminhemzeyev642@gmail.com",
+      "password": "asfafsafa",
+      "role": "FullStack Developer"
     }
   ],
   "softwareblogs": [
