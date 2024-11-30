@@ -16,13 +16,22 @@ function LoginForm() {
       try {
         const response = await axios.get("http://localhost:5000/users");
         setUsers(response.data);
-        console.log(response.data);
       } catch (error) {
         console.error("Error Data", error);
       }
     };
     fetchData();
   }, []);
+
+  const handleSignIn = () => {
+    const user = users.find((user) => user.username === username);
+    if (user) {
+      alert("login succesful");
+
+    } else {
+      alert("login error");
+    }
+  }
   return (
     <div className="container py-5 my-5 d-flex justify-content-center align-items-center">
       <div className="loginForm my-5 d-flex justify-content-start align-items-center">
@@ -37,14 +46,14 @@ function LoginForm() {
           ) : (
             <>
               <h2 className="fw-bold">Sign in</h2>
-              <form className="flex-column py-4 d-flex justify-content-center align-items-center">
+              <form className="flex-column py-4 d-flex justify-content-center align-items-center" onSubmit={handleSignIn}>
                 <input
                   type="name"
                   name="username"
                   value={username}
                   placeholder="Username"
                   className="mt-3 p-2"
-                  onChange={(e) => set}
+                  onChange={(e) => setUserName(e.target.value)}
                 />
                 <input
                   type="password"
@@ -52,8 +61,9 @@ function LoginForm() {
                   value={password}
                   placeholder="Password"
                   className="my-4 p-2"
+                  onChange={(e) => setPassword(e.target.value)}
                 />
-                <button className="btn fw-bold text-white py-2 mt-3">
+                <button type="submit" className="btn fw-bold text-white py-2 mt-3">
                   Sign in
                 </button>
               </form>
