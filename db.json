@@ -1,25 +1,58 @@
 {
-  "users": [],
-  "softwareblogs": [
+  "users": [
     {
       "id": 1,
+      "name": "John",
+      "surname": "Doe",
+      "username": "johndoe",
+      "email": "john@example.com",
+      "password": "123456",
+      "role": "FrontEnd Developer"
+    },
+    {
+      "id": 2,
+      "name": "Jane",
+      "surname": "Smith",
+      "username": "janesmith",
+      "email": "jane@example.com",
+      "password": "654321",
+      "role": "BackEnd Developer"
+    },
+    {
+      "id": "9484",
+      "name": "fuiohasfa",
+      "surname": "fasfasf",
+      "username": "asfasfas",
+      "email": "eminhemzeyev642@gmail.com",
+      "password": "asfafsafa",
+      "role": "FullStack Developer"
+    }
+  ],
+  "softwareblogs": [
+    {
+      "id": "1",
       "title": "test1",
       "content": "teasiohjtoiaethjioa"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "test4",
       "content": "ioajhiostafa"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "fasfa",
       "content": "aaaaaasfas"
+    },
+    {
+      "id": 4,
+      "title": "djIOJDa",
+      "content": "AOJDOIdj"
     }
   ],
   "websecurityblogs": [
     {
-      "id": 1,
+      "id": "1",
       "image": "",
       "title": "Special title treatment1",
       "content": "With supporting text below as a natural lead-in to additional content.",
@@ -27,7 +60,7 @@
       "comment": "14"
     },
     {
-      "id": 2,
+      "id": "2",
       "image": "",
       "title": "Special title treatment2",
       "content": "With supporting text below as a natural lead-in to additional content.",

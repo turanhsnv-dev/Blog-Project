@@ -1,73 +1,69 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../../css/LoginForm.css";
+import RegisterForm from "./RegisterForm";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 function LoginForm() {
   const [isRegistering, setIsRegistering] = useState(false);
+  const navigate = useNavigate();
+  const [users, setUsers] = useState([]);
+  const [username, setUserName] = useState("");
+  const [password, setPassword] = useState("");
 
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get("http://localhost:5000/users");
+        setUsers(response.data);
+      } catch (error) {
+        console.error("Error Data", error);
+      }
+    };
+    fetchData();
+  }, []);
+
+  const handleSignIn = () => {
+    const user = users.find((user) => user.username === username);
+    if (user) {
+      alert("login succesful");
+
+    } else {
+      alert("login error");
+    }
+  }
   return (
     <div className="container py-5 my-5 d-flex justify-content-center align-items-center">
       <div className="loginForm my-5 d-flex justify-content-start align-items-center">
         <div className="loginContainer d-flex justify-content-center align-items-center flex-column">
           {isRegistering ? (
             <>
-              <h2 className="fw-bold">Sign up</h2>
-              <form className="flex-column py-4 d-flex justify-content-center align-items-center">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Name"
-                  className="mt-3 p-2"
-                />
-                <input
-                  type="text"
-                  name="surname"
-                  placeholder="Surname"
-                  className="mt-3 p-2"
-                />
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Email"
-                  className="mt-3 p-2"
-                />
-                <input
-                  type="password"
-                  name="password"
-                  placeholder="Password"
-                  className="my-4 p-2"
-                />
-                <select className="fw-bold">
-                  <option value="Your Role">Your Role</option>
-                  <option value="FrontEnd Developer">FrontEnd Developer</option>
-                  <option value="BackEnd Developer">BackEnd Developer</option>
-                  <option value="FullStack Developer">
-                    FullStack Developer
-                  </option>
-                  <option value="Designer">Designer</option>
-                  <option value="Web Security">Web Security</option>
-                </select>
-                <button className="btn fw-bold text-white py-2 mt-3">
-                  Sign up
-                </button>
-              </form>
+              <RegisterForm
+                navigate={navigate}
+                setIsRegistering={setIsRegistering}
+              />
             </>
           ) : (
             <>
               <h2 className="fw-bold">Sign in</h2>
-              <form className="flex-column py-4 d-flex justify-content-center align-items-center">
+              <form className="flex-column py-4 d-flex justify-content-center align-items-center" onSubmit={handleSignIn}>
                 <input
-                  type="email"
-                  name="email"
-                  placeholder="Email"
+                  type="name"
+                  name="username"
+                  value={username}
+                  placeholder="Username"
                   className="mt-3 p-2"
+                  onChange={(e) => setUserName(e.target.value)}
                 />
                 <input
                   type="password"
                   name="password"
+                  value={password}
                   placeholder="Password"
                   className="my-4 p-2"
+                  onChange={(e) => setPassword(e.target.value)}
                 />
-                <button className="btn fw-bold text-white py-2 mt-3">
+                <button type="submit" className="btn fw-bold text-white py-2 mt-3">
                   Sign in
                 </button>
               </form>
