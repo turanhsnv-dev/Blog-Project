@@ -56,3 +56,57 @@ form button:hover {
 .registerContainer button:hover {
     background-color: #1e5a99;
 }
+
+@media (max-width: 768px) {
+    .loginForm {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .loginContainer,
+    .registerContainer {
+        width: 100%;
+        height: auto;
+    }
+
+    .loginContainer h2 {
+        text-align: center !important;
+        margin-top: 20px !important;
+    }
+
+    form input,
+    form select,
+    form button {
+        width: 80%;
+        /* Buton ve input'ları daha küçük yapalım */
+    }
+
+    .registerContainer h1 {
+        font-size: 1.6em;
+    }
+
+    .registerContainer h4 {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .loginForm {
+        width: 95%;
+    }
+
+    form input,
+    form select,
+    form button {
+        width: 90%;
+    }
+
+    .registerContainer h1 {
+        font-size: 1.4em;
+    }
+
+    .registerContainer h4 {
+        font-size: 0.9em;
+    }
+}

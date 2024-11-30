@@ -23,15 +23,20 @@ function LoginForm() {
     fetchData();
   }, []);
 
-  const handleSignIn = () => {
+  const handleSignIn = (e) => {
+    e.preventDefault();
     const user = users.find((user) => user.username === username);
     if (user) {
-      alert("login succesful");
-
+      if (user.password === password) {
+        alert("login succesful");
+        navigate("/");
+      } else {
+        alert("password error");
+      }
     } else {
       alert("login error");
     }
-  }
+  };
   return (
     <div className="container py-5 my-5 d-flex justify-content-center align-items-center">
       <div className="loginForm my-5 d-flex justify-content-start align-items-center">

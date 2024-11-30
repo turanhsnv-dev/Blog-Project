@@ -45,14 +45,149 @@ body {
     overflow: hidden !important;
 }
 
+
 @media (max-width: 768px) {
-    .card .card-header {
-        text-align: center !important;
+    .BlogHeader h2 {
+        font-size: 1.8em;
+        /* Başlık boyutunu büyütüyoruz */
+        text-align: center;
     }
 
+    .BlogHeader button {
+        width: 200px;
+        height: 50px;
+    }
+
+    /* Card header'ı ortala */
+    .card .card-header {
+        text-align: center !important;
+        font-size: 1.3em;
+        /* Card header font boyutunu büyütüyoruz */
+        font-weight: bold;
+    }
+
+    /* Blog başlıkları ve içeriklerini mobilde daha büyük yapalım */
     .card-body .blogsTitle {
         display: flex;
         flex-direction: column;
         align-items: center;
+        font-size: 1.1em;
+        /* Başlık font boyutunu büyütüyoruz */
+        line-height: 1.5;
+        margin-bottom: 15px;
+        /* Yazılar arasına biraz boşluk ekleyelim */
+    }
+
+    .card-body .blogsAvatar {
+        margin-bottom: 10px;
+    }
+
+    .card-body .blogsAuthor-Date,
+    .card-body .blogsLike-Comment {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 1em;
+        /* Yazar ve tarih bilgilerini daha büyük yapıyoruz */
+    }
+
+    .card-body .blogsLike-Comment .fw-bold,
+    .card-body .blogsAuthor-Date .fw-bold {
+        font-size: 1.2em;
+        /* Daha büyük font */
+        font-weight: bold;
+    }
+
+    .card-body .blogsTitle .fw-bold {
+        font-size: 1.2em;
+        /* Başlık boyutunu artırıyoruz */
+    }
+
+    .card-body .blogsTitle .colorTxt {
+        font-size: 1.1em;
+        /* Alt başlık boyutunu artırıyoruz */
+    }
+
+    .card-body .blogsTitle .card-text {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .container-fluid {
+        padding: 0;
+    }
+
+    /* Form elementlerini mobilde uyumlu hale getirelim */
+    .modal-content {
+        width: 90%;
+    }
+
+    .modal-body input,
+    .modal-body select,
+    .modal-body textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 12px;
+        font-size: 1em;
+        /* Form elemanlarının fontunu büyütüyoruz */
+    }
+}
+
+@media (max-width: 480px) {
+    .BlogHeader h2 {
+        font-size: 1.5em;
+    }
+
+    .BlogHeader button {
+        width: 180px;
+        height: 45px;
+    }
+
+    .card .card-header {
+        font-size: 1.3em;
+    }
+
+    .card-body .blogsTitle {
+        padding: 0;
+    }
+
+    .card-body .blogsAvatar {
+        margin: 10px 0;
+    }
+
+    .card-body .blogsAuthor-Date,
+    .card-body .blogsLike-Comment {
+        font-size: 1em;
+        margin-top: 10px;
+    }
+
+    .card-body .blogsLike-Comment .fw-bold,
+    .card-body .blogsAuthor-Date .fw-bold {
+        font-size: 1.1em;
+    }
+
+    .card-body .blogsTitle .fw-bold {
+        font-size: 1.2em;
+    }
+
+    .card-body .blogsTitle .colorTxt {
+        font-size: 1.1em;
+    }
+
+    .card-body .blogsTitle .card-text {
+        font-size: 1em;
+    }
+
+    /* Modal input'larının boyutlarını mobilde optimize et */
+    .modal-body input,
+    .modal-body select,
+    .modal-body textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+
+    .modal-footer button {
+        width: 100%;
+        padding: 12px;
     }
 }

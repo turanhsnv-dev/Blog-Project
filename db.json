@@ -1,31 +1,13 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "John",
-      "surname": "Doe",
-      "username": "johndoe",
-      "email": "john@example.com",
-      "password": "123456",
-      "role": "FrontEnd Developer"
-    },
-    {
-      "id": 2,
-      "name": "Jane",
-      "surname": "Smith",
-      "username": "janesmith",
-      "email": "jane@example.com",
-      "password": "654321",
-      "role": "BackEnd Developer"
-    },
-    {
-      "id": "9484",
-      "name": "fuiohasfa",
-      "surname": "fasfasf",
-      "username": "asfasfas",
+      "id": "6f3c",
+      "name": "Emin",
+      "surname": "Hemzeyev",
+      "username": "eminhmzyv",
       "email": "eminhemzeyev642@gmail.com",
-      "password": "asfafsafa",
-      "role": "FullStack Developer"
+      "password": "1456",
+      "role": "FrontEnd Developer"
     }
   ],
   "softwareblogs": [
@@ -48,6 +30,11 @@
       "id": 4,
       "title": "djIOJDa",
       "content": "AOJDOIdj"
+    },
+    {
+      "id": 5,
+      "title": "safasfa",
+      "content": "asfas"
     }
   ],
   "websecurityblogs": [
