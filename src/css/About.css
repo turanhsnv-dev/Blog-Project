@@ -52,3 +52,8 @@
   font-size: 13px;
   color: rgb(148, 148, 148);
 }
+@media(max-width :768px){
+  .cards .col-sm-2 {
+    margin: 0 !important;
+  }
+}

@@ -10,6 +10,7 @@
     padding-bottom: 1px;
     background-color: #39A7DC !important;
     box-shadow: black;
+    align-items: center;
 }
 .NavBar ul li {
     list-style: none;
@@ -25,7 +26,6 @@
     margin-top: 20px;
 }
 .NavBar ul h3 {
-    margin-left: 120px;
     margin-top: 15px;
 }
 .spaceBetweenNavItems {
@@ -47,7 +47,7 @@
 }
 .bg-shaded {
     background-color: #393e46 ;
-    padding-top: 50px;
+    padding-top: 10px;
     padding-bottom: 50px;
 }
 .whiteOverHover:hover {
@@ -73,3 +73,77 @@
    color: white;
    border-radius: 0 5px 5px 0;
 }
+.sideBar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 200px;
+    z-index: 999;
+    background-color: #39a6dc9a;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px)
+}
+.hamburger {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.hamburger span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 6px 0;
+    background: white;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+.closeSideBar {
+    margin-top: 20px;
+    font-size: 25px;
+    color: black;
+    cursor: pointer;
+}
+.display-none {
+    display: none;
+}
+.sideBar{
+    display: none !important;
+}
+
+@media(max-width : 768px){
+    .hideOnMobile{
+        display: none !important;
+    }
+    .display-none{
+        display: block;
+    }
+    .sideBar{
+        display: block !important;
+        height: 100%;
+    }
+    .sideBar button {
+        margin-left: 0px !important;
+    }
+    .footer-content {
+        text-align: center !important;
+    }
+}
+@media(max-width : 400px ) {
+    .sideBar {
+        width: 100%;
+    }
+}
+@media(min-width : 768px ) {
+    .sideBar {
+        display: none;
+    }
+}
+   

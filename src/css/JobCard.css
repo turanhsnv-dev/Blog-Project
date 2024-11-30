@@ -24,3 +24,13 @@
 .MuiButton-colorPrimary {
   background-color: #39A7DC !important;
 }
+@media (max-width: 768px){
+  .jobcard-main {
+    margin: auto !important;
+    justify-content: center;
+    text-align: center;
+  }
+  .jobcard-content{
+    margin-left: 5%;
+  }
+}

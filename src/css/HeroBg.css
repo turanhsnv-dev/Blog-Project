@@ -109,3 +109,25 @@ a {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   transition: .3s ease;
 }
+@media(max-width :768px){
+  .hero-title {
+    font-size: 8px;
+    text-align: center;
+    margin: auto;
+  }
+  .hero-job-find ul{
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+  }
+  .job-input-wrapper {
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  .search-dropdown {
+    margin: 10px 0;
+  }
+  .job-search-btn {
+    margin: 10px 0;
+  }
+}

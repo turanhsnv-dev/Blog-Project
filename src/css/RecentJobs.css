@@ -151,3 +151,24 @@
   justify-content: center;
   align-items: center;
 }
+
+
+@media(max-width: 768px){
+.post-title h2 {
+    font-size: 100% !important;
+}
+.work-style span{
+  text-align: center;
+  font-size: 60%;
+}
+.social-media {
+  font-size: 70%;
+  white-space: nowrap;
+}
+.job-post {
+  margin: 20px 0;
+}
+.post-wishlist {
+  margin: 0 0 20px 20px;
+}
+}
