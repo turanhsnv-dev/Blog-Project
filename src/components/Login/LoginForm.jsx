@@ -10,12 +10,14 @@ function LoginForm() {
   const [users, setUsers] = useState([]);
   const [username, setUserName] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await axios.get("http://localhost:5000/users");
         setUsers(response.data);
+
       } catch (error) {
         console.error("Error Data", error);
       }
@@ -23,19 +25,17 @@ function LoginForm() {
     fetchData();
   }, []);
 
+
   const handleSignIn = (e) => {
     e.preventDefault();
-    const user = users.find((user) => user.username === username);
+    const user = users.find((user) => user.username === username && user.password === password);
     if (user) {
-      if (user.password === password) {
-        alert("login succesful");
-        navigate("/");
-      } else {
-        alert("password error");
-      }
+      localStorage.setItem("loggedInUser", JSON.stringify(user));
+      navigate("/");
     } else {
-      alert("login error");
+      setError("Invalid username or password");
     }
+
   };
   return (
     <div className="container py-5 my-5 d-flex justify-content-center align-items-center">
@@ -68,6 +68,7 @@ function LoginForm() {
                   className="my-4 p-2"
                   onChange={(e) => setPassword(e.target.value)}
                 />
+                {error && <p style={{ color: "red" }}>{error}</p>}
                 <button type="submit" className="btn fw-bold text-white py-2 mt-3">
                   Sign in
                 </button>

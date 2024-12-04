@@ -8,6 +8,15 @@
       "email": "eminhemzeyev642@gmail.com",
       "password": "1456",
       "role": "FrontEnd Developer"
+    },
+    {
+      "id": "ee02",
+      "name": "Emin",
+      "surname": "Hemzeyev",
+      "username": "ehemzeyev54",
+      "email": "ehemzeyev93@gmail.com",
+      "password": "12",
+      "role": "FrontEnd Developer"
     }
   ],
   "softwareblogs": [
@@ -27,12 +36,12 @@
       "content": "aaaaaasfas"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "djIOJDa",
       "content": "AOJDOIdj"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "safasfa",
       "content": "asfas"
     }
