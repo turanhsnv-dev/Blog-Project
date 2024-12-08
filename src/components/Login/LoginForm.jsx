@@ -28,6 +28,7 @@ function LoginForm() {
 
   const handleSignIn = (e) => {
     e.preventDefault();
+
     const user = users.find((user) => user.username === username && user.password === password);
     if (user) {
       localStorage.setItem("loggedInUser", JSON.stringify(user));

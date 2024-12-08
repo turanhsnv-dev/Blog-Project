@@ -77,7 +77,10 @@ const Header = () => {
                 open={Boolean(anchorEl)}
                 onClose={handleCloseMenu}
               >
-                <MenuItem onClick={handleProfile}>Profile</MenuItem>
+                <NavLink to="/userProfile">
+
+                  <MenuItem onClick={handleProfile}>Profile</MenuItem>
+                </NavLink>
                 <MenuItem onClick={handleLogout}>Logout</MenuItem>
               </Menu>
             </div>

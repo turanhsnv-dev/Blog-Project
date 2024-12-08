@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F8F9FA;
+}
+
+.textBlack {
+    color: black !important;
+}
+
+.colorBG {
+    background-color: #39A7DC !important;
+}
+
+.colorTxt {
+    color: #39A7DC !important;
+}
+
+.borderBottom {
+    border-bottom: 8px solid whitesmoke;
+    transition: transform 0.3s ease, z-index 0.3s;
+}
+
+.card-hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.borderBottom:hover {
+    transform: scale(1.1);
+    border-radius: 8px;
+
+}
+
+.BlogHeader button {
+    background-color: #39A7DC;
+    width: 250px;
+    height: 60px;
+}
+
+.BlogHeader button:hover {
+    background-color: #39A7DC;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.UPheader {
+    font-family: 'Poppins', sans-serif;
+}
+
+.headerLeft svg {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+
+.MuiTab-root {
+    font-size: 16px;
+    text-transform: none;
+}
+
+.MuiTab-root {
+    position: relative;
+    font-size: 16px;
+    text-transform: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.MuiTab-root:hover {
+    color: #4facfe;
+    transform: scale(1.1);
+    /* Hover zamanı böyümə */
+}
+
+.MuiTab-root::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background: #4facfe;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.MuiTab-root:hover::after {
+    width: 100%;
+}
+
+.TabIndicator {
+    height: 4px;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.Mui-selected {
+    color: #ffffff !important;
+    background-color: #4facfe !important;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 8px 12px;
+}
+
+.TabContent {
+    animation: fadeIn 0.5s ease;
+}
+
+.MuiTab-root .MuiTab-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.UPheader {
+    transition: background-color 0.5s ease;
+}
+
+.tabBackground-0 {
+    background-color: #4facfe;
+}
+
+.tabBackground-1 {
+    background-color: #00c6ff;
+}
+
+.tabBackground-2 {
+    background-color: #ff7eb3;
+}
+
+.MuiTab-root .MuiTab-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.Mui-selected {
+    color: #4facfe !important;
+    background: #ffffff !important;
+    border-radius: 5px;
+}
+
+.headerLeftcontent h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.headerLeftcontent p {
+    margin: 0;
+    font-size: 14px;
+    color: #e0e0e0;
+}
+
+
+.card {
+    overflow: hidden !important;
+}
+
+.UPheader {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 8px 25px;
+    background-color: #39A7DC;
+    gap: 90px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.UPheader .headerLeft {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+
+}
+
+.headerInput {
+    padding: 5px 15px;
+    border-radius: 5%;
+    border: none;
+    width: 22%;
+    background-color: #fff;
+    color: #4facfe;
+    font-family: monospace;
+    font-size: 18px;
+}
+
+.headerInput:focus {
+    border: none;
+}
+
+
+
+
+
+.UPJ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.UPJ_filter {
+    display: flex;
+    width: 100%;
+    background-color: whitesmoke;
+    box-shadow: 1px 2px 1px rgb(189, 188, 188);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.UPJ_container {
+    display: flex;
+    width: 80%;
+    padding: 12px;
+    justify-content: center;
+
+
+
+}
+
+.custom-card {
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.custom-card-img {
+    width: 50px;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.custom-card .card-body {
+    padding: 10px;
+}
+
+
+.jobAdd {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 48%;
+}
+
+.UPJ_container {
+    display: flex;
+    justify-content: space-between;
+    /* Flex yönünü daha düzgün hale getirebilirsiniz */
+    gap: 20px;
+    /* Öğeler arasında boşluk bırak */
+    width: 100%;
+    padding: 20px;
+}
+
+.jobAdd,
+.jobContent {
+    flex: 1;
+    /* Öğelerin esnek olmasını sağlar */
+    padding: 10px;
+}
+
+.cardGrp {
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-card-img {
+    width: 100%;
+    height: auto;
+}
+
+.jobContent {
+    width: 48%;
+    display: fixed;
+    flex-direction: column;
+    padding: 5px 8px;
+
+}
+
+.jobContent .JC_herader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    padding: 5px 5px;
+
+
+}
+
+.JC_header_company {
+    display: flex;
+    width: 30%;
+}
+
+.JC_header_company img {
+    width: 20px;
+}
+
+.JC_header_company a {
+    color: rgb(31, 31, 31);
+    font-size: 17px;
+}
+
+.JC_header_iconbox {
+    display: flex;
+    width: 20%;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.dropdown-toggle {
+    background-color: #4facfe !important;
+    border: none !important;
+    color: white !important;
+}
+
+.dropdown-menu {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #4facfe !important;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #4facfe;
+    color: white !important;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu {
+    animation: fadeInDropdown 0.3s ease;
+}
+
+
+.aboutJob h3 {
+    color: #39A7DC;
+    font-weight: bold;
+
+}
+
+.JC_header_iconbox svg:hover {
+    color: #39A7DC;
+
+}
+
+.remoteBox:hover {
+    background-color: #39A7DC;
+
+}
+
+.Job_card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Job_card h2 {
+    color: #39A7DC;
+    /* Header rəngi */
+    font-weight: bold;
+}
+
+.Job_card .text-dark {
+    color: #333;
+    font-weight: bold;
+}
+
+.Job_card .d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Job_card .mt-2 {
+    margin-top: 1rem;
+}
+
+.Job_card .mt-1 {
+    margin-top: 0.5rem;
+}
+
+.Job_card a:hover {
+    text-decoration: underline;
+    color: #00c6ff;
+}
+
+.Job_card p {
+    color: #777;
+}
+
+.Job_card .MuiButton-root {
+    background-color: #39A7DC;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.Job_card .MuiButton-root:hover {
+    background-color: #00c6ff;
+}
+
+.custom-card-img {
+    width: 100%;
+    height: auto;
+}
+
+.cardGrp {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.custom-card {
+    width: 100%;
+    max-width: 300px;
+    height: 400px;
+    margin: 10px;
+}

@@ -5,6 +5,7 @@ import Home from "./pages/Home/Home";
 import Layout from "./components/Layout";
 import Blog from "./pages/Blog/Blog";
 import About from "./pages/About/About";
+import UserProfile from "./components/UserProfile/UserProfile";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Contact from "./pages/Contact/contact";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
@@ -21,6 +22,7 @@ function App() {
             <Route path="/Blog" element={<Blog />} />
             <Route path="/LoginForm" element={<LoginForm />} />
             <Route path="/Contact" element={<Contact />} />
+            <Route path="/UserProfile" element={<UserProfile />} />
           </Route>
         </Routes>
       </Router>

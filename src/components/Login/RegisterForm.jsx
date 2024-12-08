@@ -1,22 +1,43 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 const RegisterForm = ({ navigate, setIsRegistering }) => {
+  const [users, setUsers] = useState([]);
   const [name, setName] = useState("");
   const [surname, setSurName] = useState("");
   const [username, setUserName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [role, setRole] = useState("");
+  const [error, setError] = useState("");
+  useEffect(() => {
+    const fetchUsers = async () => {
+      try {
+        const response = await axios.get("http://localhost:5000/users");
+        setUsers(response.data);
+      } catch (err) {
+        console.error("Kullanıcılar yüklenemedi:", err);
+      }
+    };
+    fetchUsers();
+  }, []);
 
   const registerPost = async (e) => {
+    e.preventDefault();
     if (!name || !surname || !username || !email || !password || role === 'Your Role') {
       alert("Bütün Xanaları Doldurun...")
       return;
     }
-    e.preventDefault();
+
+    const existingUser = users.find((user) => user.username === username || user.email === email);
+
+    if (existingUser) {
+      setError("Eyni istifadəçi adı və ya e-poçt artıq mövcuddur.");
+      return;
+    }
+
     try {
-      const response = await axios.post("http://localhost:5000/users", {
+      await axios.post("http://localhost:5000/users", {
         name,
         surname,
         username,
@@ -25,8 +46,17 @@ const RegisterForm = ({ navigate, setIsRegistering }) => {
         role
       });
       alert("Qeydiyyat Ugurlu Oldu..");
-      navigate("/loginform");
+
+      setUsers((prevUsers) => [...prevUsers, responsedata]);
+
+      setName("");
+      setSurName("");
+      setUserName("");
+      setEmail("");
+      setPassword("");
+      setRole("Your Role");
       setIsRegistering(false);
+      navigate("/loginform");
     } catch (error) {
       console.error("User Data Cekilmedi", error);
     }
@@ -89,6 +119,7 @@ const RegisterForm = ({ navigate, setIsRegistering }) => {
           <option value="Designer">Designer</option>
           <option value="Web Security">Web Security</option>
         </select>
+        {error && <p style={{ color: "red" }}>{error}</p>}
         <button className="btn fw-bold text-white py-2 mt-3" type="submit">
           Sign up
         </button>

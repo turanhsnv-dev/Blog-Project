@@ -1,21 +1,50 @@
 {
   "users": [
     {
-      "id": "6f3c",
+      "id": "7f54",
       "name": "Emin",
-      "surname": "Hemzeyev",
+      "surname": "Hamzayev",
       "username": "eminhmzyv",
-      "email": "eminhemzeyev642@gmail.com",
-      "password": "1456",
-      "role": "FrontEnd Developer"
+      "email": "ehemzeyev93@gmail.com",
+      "password": "emin0000",
+      "role": "FrontEnd Developer",
+      "avatar": "./public/imgs/eminimg.jpeg"
     },
     {
-      "id": "ee02",
+      "id": "df5d",
+      "name": "Rufat",
+      "surname": "Huseynov",
+      "username": "rufathuseynov",
+      "email": "rufat@gmail.com",
+      "password": "rufat123",
+      "role": "",
+      "avatar": "./public/imgs/rufatimg.jpeg"
+    },
+    {
+      "id": "2941",
+      "name": "safasf",
+      "surname": "asfsaf",
+      "username": "safa",
+      "email": "afafa@giaga",
+      "password": "asfaf",
+      "role": ""
+    },
+    {
+      "id": "f5cb",
+      "name": "Elvin",
+      "surname": "Umudov",
+      "username": "elvinyora",
+      "email": "elvinyora102@gmail.com",
+      "password": "elvin123",
+      "role": ""
+    },
+    {
+      "id": "b8d6",
       "name": "Emin",
-      "surname": "Hemzeyev",
-      "username": "ehemzeyev54",
-      "email": "ehemzeyev93@gmail.com",
-      "password": "12",
+      "surname": "E",
+      "username": "nisafoisa",
+      "email": "min@gmail.com",
+      "password": "efafafaf",
       "role": "FrontEnd Developer"
     }
   ],
@@ -44,6 +73,16 @@
       "id": "5",
       "title": "safasfa",
       "content": "asfas"
+    },
+    {
+      "id": 6,
+      "title": "safasf",
+      "content": "afasfas"
+    },
+    {
+      "id": 7,
+      "title": "142141",
+      "content": "241241"
     }
   ],
   "websecurityblogs": [
@@ -62,6 +101,32 @@
       "content": "With supporting text below as a natural lead-in to additional content.",
       "like": "100",
       "comment": "14"
+    }
+  ],
+  "jobs": [
+    {
+      "id": 1,
+      "name": "Supervisor in the Bank",
+      "description": "This job's owner is responsible for managing bank cash.",
+      "company": "PhasaBank",
+      "about": "If you are passionate about authentic hospitality and service, have relevant experience, can demonstrate strong problem-solving, organizational and administrative skills, we have a great job opportunity for you as a Team Leader F&B.",
+      "role": "MyContact ™ Rəqəmsal Vizit Kart is a digital business card solution that allows individuals to easily share their contact information with others in just 2 seconds. Located in Baku, the company focuses on helping users expand their network quickly and efficiently."
+    },
+    {
+      "id": 2,
+      "name": "Oli engniering",
+      "description": "This job's owner is responsible for managing bank cash.",
+      "company": "Socar",
+      "about": "If you are passionate about authentic hospitality and service, have relevant experience, can demonstrate strong problem-solving, organizational and administrative skills, we have a great job opportunity for you as a Team Leader F&B.",
+      "role": "MyContact ™ Rəqəmsal Vizit Kart is a digital business card solution that allows individuals to easily share their contact information with others in just 2 seconds. Located in Baku, the company focuses on helping users expand their network quickly and efficiently."
+    },
+    {
+      "id": 3,
+      "name": "Front-end developer",
+      "description": "This job's owner is responsible for managing bank cash.",
+      "company": "Bp",
+      "about": "If you are passionate about authentic hospitality and service, have relevant experience, can demonstrate strong problem-solving, organizational and administrative skills, we have a great job opportunity for you as a Team Leader F&B.",
+      "role": "MyContact ™ Rəqəmsal Vizit Kart is a digital business card solution that allows individuals to easily share their contact information with others in just 2 seconds. Located in Baku, the company focuses on helping users expand their network quickly and efficiently."
     }
   ]
 }
