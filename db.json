@@ -75,14 +75,19 @@
       "content": "asfas"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "safasf",
       "content": "afasfas"
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "142141",
       "content": "241241"
+    },
+    {
+      "id": 8,
+      "title": "fghdfgdf",
+      "content": "1ehfgfhsdjkf"
     }
   ],
   "websecurityblogs": [
@@ -105,7 +110,7 @@
   ],
   "jobs": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Supervisor in the Bank",
       "description": "This job's owner is responsible for managing bank cash.",
       "company": "PhasaBank",
@@ -113,7 +118,7 @@
       "role": "MyContact ™ Rəqəmsal Vizit Kart is a digital business card solution that allows individuals to easily share their contact information with others in just 2 seconds. Located in Baku, the company focuses on helping users expand their network quickly and efficiently."
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Oli engniering",
       "description": "This job's owner is responsible for managing bank cash.",
       "company": "Socar",
@@ -121,7 +126,7 @@
       "role": "MyContact ™ Rəqəmsal Vizit Kart is a digital business card solution that allows individuals to easily share their contact information with others in just 2 seconds. Located in Baku, the company focuses on helping users expand their network quickly and efficiently."
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Front-end developer",
       "description": "This job's owner is responsible for managing bank cash.",
       "company": "Bp",

@@ -4,92 +4,58 @@
     box-sizing: border-box;
 }
 
-.NavBar {
+.navBar {
     width: 100%;
     height: auto;
-    margin-bottom: 0px;
-    padding-bottom: 1px;
-    background-color: #39A7DC !important;
-    box-shadow: black;
-    align-items: center;
+    background-color: #fff;
 }
 
 .active {
-    color: black !important;
+    color: #41693d !important;
+    font-weight: 900;
 }
 
-.NavBar ul li {
-    list-style: none;
+.menu-links a {
+    color: #5F885C;
+    margin: 0px 25px;
+    transition: .3s ease;
+}
+.menu-links a:hover {
+    color: rgb(63, 59, 63);
+    transition: .3s ease;
+    font-weight: 900;
 }
 
-.NavBar ul {
-    display: flex;
+.logo {
+    font-weight: 900;
+    background: linear-gradient(to right, #2a4528, #a8e6a3); /* Açık yeşilden beyaza */
+    -webkit-background-clip: text; /* Sadece metni renklendirir */
+    -webkit-text-fill-color: transparent; /* Arka planı gösterir */
 }
 
-.pgf {
-    margin-left: 30px;
-    margin-top: 10px;
-    cursor: pointer;
-    color: #ffffff93;
+.nav-btn {
+    padding: 10px 40px;
+    background-color: #41693d;
+    border-radius: 7px;
+    border: none;
+    transition: .3s ease;
 }
 
-.NavBar ul h3 {
-    margin-top: 15px;
+.nav-btn:hover {
+    background-color: #2a4528;
+    transition: .3s ease;
+    font-weight: 800;
 }
 
-.spaceBetweenNavItems {
-    width: 400px;
-}
 
-.NavBar ul button {
-    margin-left: 30px;
-    margin-top: 12px;
-}
-
-.shadeOverHover:hover {
-    color: rgb(0, 0, 0);
-}
-
-.infoOverHover:hover {
-    color: #0dcaf0;
-}
-
-.opacity p {
-    color: #c8c8c8;
-    cursor: pointer;
-}
 
 .bg-shaded {
     background-color: #393e46;
-    padding-top: 10px;
-    padding-bottom: 50px;
-}
-
-.whiteOverHover:hover {
-    color: rgb(255, 255, 255);
+    padding: 60px 0px;
 }
 
 .copyRight {
     color: #c8c8c8;
-}
-
-.searchBar {
-    border-radius: 5px 0 0 5px;
-    color: black;
-    border: none;
-    padding: 4px;
-    margin-top: 15px;
-    margin-left: 20px;
-}
-
-.searchButton {
-    border: none;
-    margin-top: 15px;
-    margin-left: 0 !important;
-    padding: 4px;
-    background-color: #0dcaf0;
-    color: white;
-    border-radius: 0 5px 5px 0;
 }
 
 .sideBar {
@@ -123,7 +89,7 @@
     margin: 6px 0;
     background: white;
     border-radius: 4px;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .closeSideBar {

@@ -44,23 +44,27 @@ const Header = () => {
 
   return (
     <div>
-      <div className="NavBar py-2">
-        <ul className="nav justify-content-between align-items-center">
-          <li className="d-flex align-items-center">
-            <h3 className="text-white ms-4"><NavLink className="text-white" to="/">JobStart</NavLink></h3>
-          </li>
+      <div className="navBar py-3 d-flex justify-content-between align-items-center">
 
-          <div className="nav-links d-flex justify-content-center flex-grow-1 fw-bold">
-            <NavLink to="/" className="hideOnMobile  pgf me-3">
+        {/* HEADER LOGO */}
+          <div className="d-flex align-items-center justify-content-center ms-4">
+            <NavLink className="logo text-black fs-3 text-uppercase" to="/">JobStart</NavLink>
+          </div>
+
+
+
+         {/* HEADER MENU NAV */}
+          <div className="menu-links d-flex justify-content-between align-items-center fw-bold">
+            <NavLink to="/" className="hideOnMobile fs-5">
               Home
             </NavLink>
-            <NavLink to="/about" className="hideOnMobile shadeOverHover pgf me-3">
+            <NavLink to="/about" className="hideOnMobile fs-5">
               About
             </NavLink>
-            <NavLink to="/blog" className="hideOnMobile shadeOverHover pgf me-3">
+            <NavLink to="/blog" className="hideOnMobile fs-5">
               Blog
             </NavLink>
-            <NavLink to="/contact" className="hideOnMobile shadeOverHover pgf me-3">
+            <NavLink to="/contact" className="hideOnMobile fs-5">
               Contact
             </NavLink>
           </div>
@@ -85,8 +89,12 @@ const Header = () => {
               </Menu>
             </div>
           ) : (
+
+
+
+            // HEADER LOGIN
             <NavLink to="/loginform">
-              <button type="button" className="hideOnMobile btn btn-info text-white mx-5">
+              <button type="button" className="hideOnMobile nav-btn text-white mx-4">
                 Login
               </button>
             </NavLink>
@@ -97,7 +105,7 @@ const Header = () => {
             <span></span>
             <span></span>
           </button>
-        </ul>
+        
 
         {isSidebarVisible && (
           <ul className="sideBar">
