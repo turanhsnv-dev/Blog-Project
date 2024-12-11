@@ -1,6 +1,7 @@
 import React from "react";
 import "../../css/HeroBg.css";
 import Dropdown from "react-bootstrap/Dropdown";
+import Form from 'react-bootstrap/Form';
 
 const HeroBg = () => {
   return (
@@ -34,7 +35,7 @@ const HeroBg = () => {
             </div>
 
             {/* JOB SEARCH INPUT  */}
-            <div className='job-input-wrapper d-flex justify-content-between align-items-center'>
+            <div className='row job-input-wrapper d-flex justify-content-between align-items-center'>
               <div className='col-md-3'>
                 <input type='text' placeholder='eg. Web Developer' />
               </div>
@@ -55,9 +56,18 @@ const HeroBg = () => {
                   </Dropdown.Menu>
                 </Dropdown>
               </div>
-              <div className='col-md-3'>
-                <input type='text' placeholder='Location' />
+
+              {/* LOCATION */}
+              <div className='col-md-3 select-location'>
+                <Form.Select className="form-select" aria-label='Default select example'>
+                  <option>Location</option>
+                  <option value='1'>Azerbaijan, Baku</option>
+                  <option value='2'>Turkey, Istanbul</option>
+                  <option value='3'>Italy, Milan</option>
+                </Form.Select>
               </div>
+
+              {/* SEARCH BUTTON */}
               <div className='col-md-3 d-flex job-search-btn d-flex justify-content-center align-items-center'>
                 <a href=''>Search</a>
               </div>

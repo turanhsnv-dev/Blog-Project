@@ -15,12 +15,13 @@
 .recent-title h1 {
   font-size: 2em;
   font-weight: 800;
+  color: #2a4538;
 }
 
 .recent-title .recent-btn {
   width: 250px;
   height: 60px;
-  background-color: #39A7DC;
+  background-color: #55A461;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +63,7 @@
 
 .job-post-info .post-title h2 {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .post-title .work-style {
@@ -123,7 +124,7 @@
 }
 
 .post-wishlist:hover {
-  background-color: red;
+  background-color: rgb(228, 116, 116);
   color: white;
   transition: .3s ease;
 }
@@ -131,10 +132,16 @@
 .post-icons-right .post-apply {
   width: 100px;
   height: 40px;
-  background-color: #39A7DC;
+  background-color: #55A461;
   margin-left: 15px;
   border-radius: 8px;
   padding: 8px 18px;
+  transition: .3s ease;
+}
+
+.post-icons-right .post-apply:hover {
+  background-color: #2a4538;
+  transition: .3s ease;
 }
 
 .post-apply a {

@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 * {
- font-family: "Nunito Sans", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 a {
@@ -10,11 +10,11 @@ a {
 
 .hero-bg {
   width: 100%;
-  /* background-image: linear-gradient(to top, #dfe9f3 0%, white 100%); */
-  background-image: url(https://images-ext-1.discordapp.net/external/9rjZqPsthfkUtx3EiMJ97L2BIpVlNMZQOfhmxB-l8g0/%3Fsfvrsn%3D7dca9f15_1/https/www.rasmussen.edu/images/rasmussenlibraries/blogs/school-of-technology/2022/is-web-development-a-good-careera8b7d804-eb43-4927-95ce-23a649e1a837.jpg?format=webp&width=1418&height=741);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: linear-gradient(
+    to bottom,
+    #2a4528,
+    #83e17c
+  ); /* Açık yeşilden pastel beyaz tonlarına */
 }
 
 .hero-bg .hero-container {
@@ -51,22 +51,29 @@ a {
   padding: 16px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 .hero-job-search .hero-job-find ul li a {
   font-weight: bold;
-  transition: .5s ease;
+  transition: 0.5s ease;
+  color: black;
+  font-weight: 800;
+}
+
+.form-select {
+  padding: 10px 12px !important;
 }
 
 .hero-job-find ul li:hover {
-  background-color: #39A7DC;
-  transition: .3s ease;
+  background-color: white;
+  transition: 0.3s ease;
 }
 
 .hero-job-find ul li:hover a {
-  color: white;
-  transition: .5s ease;
+  color: #2a4528;
+  transition: 0.5s ease;
+  font-weight: 900;
 }
 
 .hero-job-search .job-input-wrapper {
@@ -79,43 +86,43 @@ a {
 .job-input-wrapper input {
   padding: 10px 12px;
   outline: none;
-  border: 1px solid #39A7DC;
+  border: 1px solid #2a4528;
   border-radius: 5px;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 .job-input-wrapper .search-dropdown button {
-   padding: 10px 65px;
-   background-color: #39A7DC;
+  padding: 10px 65px;
+  background-color: #55a461 !important;
 }
 
 .job-input-wrapper .job-search-btn {
   padding: 10px 12px;
   border-radius: 5px;
-  background-color: #39A7DC;
+  background-color: #55a461;
 }
 
 .job-search-btn a {
   color: white;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 .job-search-btn:hover a {
   font-weight: bold;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 .job-input-wrapper input:hover {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
-@media(max-width :768px){
+@media (max-width: 768px) {
   .hero-title {
     font-size: 8px;
     text-align: center;
     margin: auto;
   }
-  .hero-job-find ul{
+  .hero-job-find ul {
     flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
