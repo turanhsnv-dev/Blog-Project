@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-shaded">
+    <div className="bg-shaded Footer">
       <div className="container">
         <div className="footer-content row py-5 opacity">
           <div className="col-sm-2 text-white">

@@ -1,10 +1,21 @@
 import React, { useEffect, useState } from "react";
 import Card from "react-bootstrap/Card";
-import { MDBContainer } from "mdb-react-ui-kit";
 import axios from "axios";
 import { createPost } from "../../components/Services/Api";
 import { Modal, Button, Form } from "react-bootstrap";
 import "../../css/Blog.css";
+import CardHeader from '@mui/material/CardHeader';
+import CardMedia from '@mui/material/CardMedia';
+import CardContent from '@mui/material/CardContent';
+import CardActions from '@mui/material/CardActions';
+import Avatar from '@mui/material/Avatar';
+import IconButton from '@mui/material/IconButton';
+import Typography from '@mui/material/Typography';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import ShareIcon from '@mui/icons-material/Share';
+import MoreVertIcon from '@mui/icons-material/MoreVert';
+
+
 const Blog = () => {
   const [users, setUsers] = useState([]);
   const [softwareblogs, setSoftwareblogs] = useState([]);
@@ -12,13 +23,31 @@ const Blog = () => {
   const [showModal, setShowModal] = useState(false);
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
+  const [category, setCategory] = useState("");
+  const [loggedInUser, setLoggedInUser] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await createPost({ title, content });
+    if (!category) {
+      alert("Zehmet olmasa kategori seçin...");
+      return;
+    }
+
+    const newPost = {
+      title,
+      content,
+      category,
+      author: loggedInUser.username
+    };
+
+    await createPost(newPost);
     setTitle("");
     setContent("");
+    setCategory("");
+    setShowModal(false);
   };
+
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -36,19 +65,30 @@ const Blog = () => {
       }
     };
     fetchData();
+
+    const user = JSON.parse(localStorage.getItem("loggedInUser"));
+    setLoggedInUser(user);
   }, []);
+
 
   return (
     <>
       <div className="d-flex justify-content-between align-items-center BlogHeader pt-5">
-        <h2 className="mx-5 py-5 fw-bold ">Blogs</h2>
-        <button
-          onClick={() => setShowModal(true)}
-          className="btn mx-5 fw-bold text-white"
-        >
-          +New Blog
-        </button>
+        <h2 className="mx-5 py-5 fw-bold TextColor">Blogs</h2>
+        {loggedInUser ? (
+          <button
+            onClick={() => setShowModal(true)}
+            className="btn mx-5 fw-bold text-white BackgroundColor"
+          >
+            +New Blog
+          </button>
+
+        ) : (
+          <></>
+        )}
+
       </div>
+
       <Modal show={showModal} onHide={() => setShowModal(false)} centered>
         <Modal.Header closeButton>
           <Modal.Title>Blog Əlavə Et</Modal.Title>
@@ -57,10 +97,10 @@ const Blog = () => {
           <Form>
             <Form.Group className="mb-3">
               <Form.Label>Category</Form.Label>
-              <Form.Select>
-                <option>Category</option>
-                <option value={softwareblogs} onChange={(e) => setSoftwareblogs(e.target.value)}>Software Blogs</option>
-                <option value={websecurityblogs} onChange={(e) => setWebsecurityblogs(e.target.value)}>Web Security Blogs</option>
+              <Form.Select value={category} onChange={(e) => setCategory(e.target.value)}>
+                <option>Kategoriya seçin</option>
+                <option value="softwareblogs">Software Blogs</option>
+                <option value="websecurityblogs" >Web Security Blogs</option>
               </Form.Select>
             </Form.Group>
             <Form.Group className="mb-3">
@@ -84,119 +124,113 @@ const Blog = () => {
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="primary" onClick={handleSubmit}>
+          <Button variant="primary" className="BackgroundColor" onClick={handleSubmit}>
             Göndər
           </Button>
         </Modal.Footer>
       </Modal>
 
-      <div className="container-fluid py-5 px-5">
-        <Card className="card card-hover mb-5">
-          <Card.Header className="colorBG px-5 fw-bold text-white">
+      <div className="container-fluid pt-5 px-5">
+        <Card className="card card-hover mb-4">
+          <Card.Header className="BackgroundColor px-5 fw-bold text-white">
             Software and Developer World
           </Card.Header>
-          <Card.Body>
-            {softwareblogs.map((blog) => (
-              <div key={blog.id}>
-                <div className="row py-4 borderBottom">
-                  <div className="col-sm-2 text-center blogsAvatar">
-                    <MDBContainer className="py-3">
-                      <img
-                        src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp"
-                        className="rounded-circle shadow-5"
-                        style={{ width: "70px" }}
-                        alt="Avatar"
-                      />
-                    </MDBContainer>
-                  </div>
-                  <div className="col-sm-5 blogsTitle py-4">
-                    <Card.Title className="colorTxt fw-bold">
-                      {blog.title}
-                    </Card.Title>
-                    <Card.Text>{blog.content}</Card.Text>
-                  </div>
-                  <div className="col-sm-3 blogsAuthor-Date py-4">
-                    <Card.Text className="colorTxt fw-bold">
-                      Author :{" "}
-                      <span className="textBlack fw-semibold">
-                        Emin Hemzeyev
-                      </span>
-                    </Card.Text>
-                    <Card.Text className="fw-bold colorTxt">
-                      Date :{" "}
-                      <span className="textBlack fw-semibold">Today 22:10</span>
-                    </Card.Text>
-                  </div>
-                  <div className="col-sm-2 blogsLike-Comment py-4">
-                    <Card.Text className="colorTxt fw-bold ">
-                      Likes :{" "}
-                      <span className="textBlack fw-semibold">{blog.like}</span>
-                    </Card.Text>
-                    <Card.Text className="fw-bold colorTxt">
-                      Comments :{" "}
-                      <span className="textBlack fw-semibold">
-                        {blog.comment}
-                      </span>
-                    </Card.Text>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </Card.Body>
+
         </Card>
-        <Card className="card card-hover mb-5">
-          <Card.Header className="colorBG px-5 fw-bold text-white">
-            Web Security{" "}
+        <div className="row pb-5">
+          {softwareblogs.map((blog) => {
+            const author = users.find(user => user.username === blog.author);
+            return (
+              <div key={blog.id} className="col-sm-4 pb-4">
+                <Card>
+                  <CardHeader
+                    avatar={
+                      <Avatar aria-label="recipe" src={author.avatar}>
+
+                      </Avatar>
+                    }
+                    action={
+                      <IconButton aria-label="settings">
+                        <MoreVertIcon />
+                      </IconButton>
+                    }
+                    titleTypographyProps={{ variant: 'h5' }}
+                    title={blog.title}
+                    subheader={blog.author}
+                  />
+                  <CardMedia
+                    component="img"
+                    height="194"
+                    image="https://singularity.gs/wp-content/uploads/2018/04/css.jpg"
+                    alt="img"
+                  />
+                  <CardContent>
+                    <Typography variant="body3" sx={{ color: 'text.secondary' }}>
+                      {blog.content}
+                    </Typography>
+                  </CardContent>
+                  <CardActions disableSpacing>
+                    <IconButton aria-label="add to favorites">
+                      <FavoriteIcon className="favoriteIcon" />
+                    </IconButton>
+                    <IconButton aria-label="share">
+                      <ShareIcon className="shareIcon" />
+                    </IconButton>
+                  </CardActions>
+                </Card>
+              </div>
+            );
+          })}
+        </div>
+        <Card className="card card-hover mb-4">
+          <Card.Header className="BackgroundColor px-5 fw-bold text-white">
+            Web Security
           </Card.Header>
-          <Card.Body>
-            {websecurityblogs.map((blog) => (
-              <div key={blog.id}>
-                <div className="row py-4 borderBottom">
-                  <div className="col-sm-2 text-center blogsAvatar">
-                    <MDBContainer className="py-3">
-                      <img
-                        src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp"
-                        className="rounded-circle shadow-5"
-                        style={{ width: "70px" }}
-                        alt="Avatar"
-                      />
-                    </MDBContainer>
-                  </div>
-                  <div className="col-sm-5 blogsTitle py-4">
-                    <Card.Title className="colorTxt fw-bold">
-                      {blog.title}
-                    </Card.Title>
-                    <Card.Text>{blog.content}</Card.Text>
-                  </div>
-                  <div className="col-sm-3 blogsAuthor-Date py-4">
-                    <Card.Text className="colorTxt fw-bold">
-                      Author :{" "}
-                      <span className="textBlack fw-semibold">
-                        Emin Hemzeyev
-                      </span>
-                    </Card.Text>
-                    <Card.Text className="fw-bold colorTxt">
-                      Date :{" "}
-                      <span className="textBlack fw-semibold">Today 22:10</span>
-                    </Card.Text>
-                  </div>
-                  <div className="col-sm-2 blogsLike-Comment py-4">
-                    <Card.Text className="fw-bold colorTxt">
-                      Likes :{" "}
-                      <span className="textBlack fw-semibold">{blog.like}</span>
-                    </Card.Text>
-                    <Card.Text className="fw-bold colorTxt">
-                      Comments :{" "}
-                      <span className="textBlack fw-semibold">
-                        {blog.comment}
-                      </span>
-                    </Card.Text>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </Card.Body>
+
         </Card>
+        <div className="row pb-5">
+          {websecurityblogs.map((blog) => (
+            <div key={blog.id} className="col-sm-4 pb-4">
+              <Card>
+                <CardHeader
+
+                  avatar={
+                    <Avatar aria-label="recipe">
+
+                    </Avatar>
+                  }
+                  action={
+                    <IconButton aria-label="settings">
+                      <MoreVertIcon />
+                    </IconButton>
+                  }
+                  titleTypographyProps={{ variant: 'h5' }}
+                  title={blog.title}
+                  subheader="September 14, 2016"
+                />
+                <CardMedia
+                  component="img"
+                  height="194"
+                  image="https://singularity.gs/wp-content/uploads/2018/04/css.jpg"
+                  alt="img"
+                />
+                <CardContent>
+                  <Typography variant="body3" sx={{ color: 'text.secondary' }}>
+                    {blog.content}
+                  </Typography>
+                </CardContent>
+                <CardActions disableSpacing>
+                  <IconButton aria-label="add to favorites">
+                    <FavoriteIcon className="favoriteIcon" />
+                  </IconButton>
+                  <IconButton aria-label="share">
+                    <ShareIcon className="shareIcon" />
+                  </IconButton>
+                </CardActions>
+              </Card>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );

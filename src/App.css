@@ -20,6 +20,7 @@
     margin: 0px 25px;
     transition: .3s ease;
 }
+
 .menu-links a:hover {
     color: rgb(63, 59, 63);
     transition: .3s ease;
@@ -28,9 +29,12 @@
 
 .logo {
     font-weight: 900;
-    background: linear-gradient(to right, #2a4528, #a8e6a3); /* Açık yeşilden beyaza */
-    -webkit-background-clip: text; /* Sadece metni renklendirir */
-    -webkit-text-fill-color: transparent; /* Arka planı gösterir */
+    background: linear-gradient(to right, #2a4528, #a8e6a3);
+    /* Açık yeşilden beyaza */
+    -webkit-background-clip: text;
+    /* Sadece metni renklendirir */
+    -webkit-text-fill-color: transparent;
+    /* Arka planı gösterir */
 }
 
 .nav-btn {
@@ -105,6 +109,10 @@
 
 .sideBar {
     display: none !important;
+}
+
+.Footer {
+    background-color: #41693d !important;
 }
 
 @media(max-width : 768px) {

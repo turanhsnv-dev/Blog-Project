@@ -50,44 +50,25 @@
   ],
   "softwareblogs": [
     {
-      "id": "1",
-      "title": "test1",
-      "content": "teasiohjtoiaethjioa"
+      "id": 1,
+      "title": "fasfsa",
+      "content": "fasfasfa",
+      "category": "softwareblogs",
+      "author": "eminhmzyv"
     },
     {
-      "id": "2",
-      "title": "test4",
-      "content": "ioajhiostafa"
+      "id": 2,
+      "title": "asfafas",
+      "content": "fafsafwert12t",
+      "category": "softwareblogs",
+      "author": "rufathuseynov"
     },
     {
-      "id": "3",
-      "title": "fasfa",
-      "content": "aaaaaasfas"
-    },
-    {
-      "id": "4",
-      "title": "djIOJDa",
-      "content": "AOJDOIdj"
-    },
-    {
-      "id": "5",
-      "title": "safasfa",
-      "content": "asfas"
-    },
-    {
-      "id": "6",
-      "title": "safasf",
-      "content": "afasfas"
-    },
-    {
-      "id": "7",
-      "title": "142141",
-      "content": "241241"
-    },
-    {
-      "id": 8,
-      "title": "fghdfgdf",
-      "content": "1ehfgfhsdjkf"
+      "id": 3,
+      "title": "asfa",
+      "content": "sfasfa",
+      "category": "softwareblogs",
+      "author": "rufathuseynov"
     }
   ],
   "websecurityblogs": [

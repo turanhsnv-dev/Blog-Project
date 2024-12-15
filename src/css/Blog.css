@@ -1,5 +1,32 @@
 body {
-    background-color: #F8F9FA;
+    background-color: #F8F9FA !important;
+}
+
+.TextColor {
+    color: #41693d;
+}
+
+.favoriteIcon:hover {
+    color: red;
+}
+
+.shareIcon:hover {
+    color: #55a461;
+}
+
+.BackgroundColor {
+    background-color: #55a461 !important;
+    border-color: #55a461 !important;
+}
+
+.BlogHeader button {
+    transition: .3s ease;
+}
+
+.BlogHeader button:hover {
+    background-color: #41693d !important;
+    transition: .3s ease !important;
+    font-weight: 900 !important;
 }
 
 .textBlack {

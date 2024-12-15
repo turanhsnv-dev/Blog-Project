@@ -32,6 +32,7 @@ function LoginForm() {
     const user = users.find((user) => user.username === username && user.password === password);
     if (user) {
       localStorage.setItem("loggedInUser", JSON.stringify(user));
+
       navigate("/");
     } else {
       setError("Invalid username or password");
@@ -39,7 +40,9 @@ function LoginForm() {
 
   };
   return (
+
     <div className="container py-5 my-5 d-flex justify-content-center align-items-center">
+
       <div className="loginForm my-5 d-flex justify-content-start align-items-center">
         <div className="loginContainer d-flex justify-content-center align-items-center flex-column">
           {isRegistering ? (
