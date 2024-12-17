@@ -46,6 +46,15 @@
       "email": "min@gmail.com",
       "password": "efafafaf",
       "role": "FrontEnd Developer"
+    },
+    {
+      "id": "8fa6",
+      "name": "Turan",
+      "surname": "Hasanov",
+      "username": "turan-dev",
+      "email": "turanhasan13@icloud.com",
+      "password": "1213",
+      "role": "FrontEnd Developer"
     }
   ],
   "softwareblogs": [
@@ -69,6 +78,20 @@
       "content": "sfasfa",
       "category": "softwareblogs",
       "author": "rufathuseynov"
+    },
+    {
+      "id": 4,
+      "title": "fsdfsd",
+      "content": "werwerwrwe",
+      "category": "softwareblogs",
+      "author": "rufathuseynov"
+    },
+    {
+      "id": 5,
+      "title": "dfgdfgdfgdf",
+      "content": "fgdfgfdgdfg",
+      "category": "websecurityblogs",
+      "author": "turan-dev"
     }
   ],
   "websecurityblogs": [
@@ -113,6 +136,65 @@
       "company": "Bp",
       "about": "If you are passionate about authentic hospitality and service, have relevant experience, can demonstrate strong problem-solving, organizational and administrative skills, we have a great job opportunity for you as a Team Leader F&B.",
       "role": "MyContact ™ Rəqəmsal Vizit Kart is a digital business card solution that allows individuals to easily share their contact information with others in just 2 seconds. Located in Baku, the company focuses on helping users expand their network quickly and efficiently."
+    }
+  ],
+
+  "jobCard" : [
+    {
+      "id" : 1,
+      "title" : "Frontend Developer",
+      "author" : "Turan",
+      "price" : "$2900",
+      "image" : "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
+    },
+    {
+      "id" : 2,
+      "title" : "Backend Developer",
+      "author" : "Emin",
+      "price" : "$2900",
+      "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ1ipeQbFseUM_GzxwMoQj45w9HtAnu4eu5w&s"
+    },
+    {
+      "id" : 3,
+      "title" : "Frontend Developer",
+      "author" : "Anvar",
+      "price" : "$2900",
+      "img" : "img.jpg"
+    },
+    {
+      "id" : 4,
+      "title" : "Frontend Developer",
+      "author" : "Rufat",
+      "price" : "$600",
+      "img" : "img.jpg"
+    },
+    {
+      "id" : 1,
+      "title" : "Frontend Developer",
+      "author" : "Turan",
+      "price" : "$2900",
+      "image" : "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
+    },
+    {
+      "id" : 2,
+      "title" : "Backend Developer",
+      "author" : "Emin",
+      "price" : "$2900",
+      "img" : "img.jpg"
+    },
+    {
+      "id" : 3,
+      "title" : "Frontend Developer",
+      "author" : "Anvar",
+      "price" : "$2900",
+      "img" : "img.jpg"
+    },
+    {
+      "id" : 4,
+      "title" : "Frontend Developer",
+      "author" : "Rufat",
+      "price" : "$600",
+      "img" : "img.jpg"
     }
   ]
 }

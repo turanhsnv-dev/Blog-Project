@@ -10,6 +10,7 @@
 .jobcard-main .jobcard-content {
   flex-wrap: wrap;
   margin-top: 40px;
+  gap: 30px;
 }
 
 .css-1lijw7u-JoyCard-root {

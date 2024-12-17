@@ -10,131 +10,85 @@ a {
 
 .hero-bg {
   width: 100%;
-  background: linear-gradient(
-    to bottom,
-    #2a4528,
-    #83e17c
-  ); /* Açık yeşilden pastel beyaz tonlarına */
+  background-color: white;
 }
 
 .hero-bg .hero-container {
-  padding: 12em 0;
-}
-
-.hero-container .hero-content .hero-title {
-  width: 60%;
-}
-
-.hero-content h1 {
-  font-size: 5em;
-  font-weight: 300;
-  line-height: 1.3em;
-  color: white;
-}
-
-.hero-content h1 span {
-  font-weight: 800;
-}
-
-.hero-content .hero-job-search {
-  margin-top: 20px;
-}
-
-.hero-job-search .hero-job-find ul {
-  list-style-type: none;
+  padding-top: 5em;
   display: flex;
-  padding: 0;
-  margin: 0 !important;
 }
 
-.hero-job-search .hero-job-find ul li {
-  padding: 16px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  transition: 0.3s ease;
+.hero-container .hero-text-box {
+  width: 50%;
+  height: auto;
+  /* padding: 20px; */
 }
 
-.hero-job-search .hero-job-find ul li a {
-  font-weight: bold;
-  transition: 0.5s ease;
-  color: black;
+.hero-text-box h1 {
   font-weight: 800;
+  font-size: 2.8em;
+  padding-top: 1.6em;
 }
 
-.form-select {
-  padding: 10px 12px !important;
+.hero-text-box h2 {
+  font-weight: 800;
+  font-size: 2.8em;
+
 }
 
-.hero-job-find ul li:hover {
-  background-color: white;
-  transition: 0.3s ease;
+.hero-text-box h1 span {
+  color: blue;
 }
 
-.hero-job-find ul li:hover a {
-  color: #2a4528;
-  transition: 0.5s ease;
-  font-weight: 900;
+.hero-text-box p {
+  letter-spacing: 1px;
+  text-transform: capitalize;
 }
 
-.hero-job-search .job-input-wrapper {
-  width: 75%;
-  padding: 24px;
-  background-color: white;
-  border-radius: 6px;
-}
-
-.job-input-wrapper input {
-  padding: 10px 12px;
-  outline: none;
-  border: 1px solid #2a4528;
-  border-radius: 5px;
-  transition: 0.3s ease;
-}
-
-.job-input-wrapper .search-dropdown button {
-  padding: 10px 65px;
-  background-color: #55a461 !important;
-}
-
-.job-input-wrapper .job-search-btn {
-  padding: 10px 12px;
-  border-radius: 5px;
-  background-color: #55a461;
-}
-
-.job-search-btn a {
-  color: white;
-  transition: 0.3s ease;
-}
-
-.job-search-btn:hover a {
+.hero-text-box a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  background-color: rgb(196, 193, 193);
+  border-radius: 7px;
   font-weight: bold;
-  transition: 0.3s ease;
 }
 
-.job-input-wrapper input:hover {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  transition: 0.3s ease;
+.hero-text-box a i {
+  margin-left: 10px;
 }
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: 8px;
-    text-align: center;
-    margin: auto;
-  }
-  .hero-job-find ul {
-    flex-wrap: wrap;
-    flex-direction: column;
-    text-align: center;
-  }
-  .job-input-wrapper {
-    flex-wrap: wrap;
-    margin: auto;
-  }
-  .search-dropdown {
-    margin: 10px 0;
-  }
-  .job-search-btn {
-    margin: 10px 0;
-  }
+
+.hero-container .hero-image {
+  width: 50%;
+}
+
+.hero-image .main-image {
+width: 100%;
+height: 500px;
+position: relative;
+}
+
+.main-image img {
+  width: 60%;
+  height: 500px;
+  object-fit: cover;
+  z-index: 1000;
+  margin-left: 130px;
+}
+
+.bg-image {
+  z-index: 999;
+  position: relative;
+}
+
+.main-image .animate {
+  position: absolute;
+  top: 24%;
+  left: 0px;
+  width: 40%;
+  height: 250px;
+  background-color: lightblue;
+  border-radius: 100%;
 }
